@@ -2,6 +2,7 @@ build:
     stage: build
     image: node:20-bookworm
     script: 
+        - echo plop
         - git clone https://build@PLUGIN_RTGE_TOKENgitlab2.si.rennes.fr/sig/ed/rtge/RTGE.git js/extension
         - npm run ext:build
     variables:
