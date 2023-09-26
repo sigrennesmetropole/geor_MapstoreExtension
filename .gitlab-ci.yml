@@ -3,8 +3,9 @@ build:
     image: node:20-bookworm
     script: 
         - echo plop
-        - git clone https://build@PLUGIN_RTGE_TOKENgitlab2.si.rennes.fr/sig/ed/rtge/RTGE.git js/extension
+        #- git clone https://build@PLUGIN_RTGE_TOKENgitlab2.si.rennes.fr/sig/ed/rtge/RTGE.git js/extension
         - npm run ext:build
     variables:
         GIT_SUBMODULE_STRATEGY: recursive
         GIT_SUBMODULE_FORCE_HTTPS: "true"
+        GIT_SUBMODULE_PATHS: Mapstore2 js/extension
