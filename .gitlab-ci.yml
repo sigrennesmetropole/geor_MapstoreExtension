@@ -7,4 +7,4 @@ build:
         - npm run ext:build
     variables:
         GIT_SUBMODULE_STRATEGY: recursive
-        GIT_SUBMODULE_PATHS: MapStore2
+        GIT_SUBMODULE_PATHS: MapStore2 :(exclude)js/extension
