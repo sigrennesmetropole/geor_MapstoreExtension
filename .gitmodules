@@ -3,5 +3,5 @@
 	url = https://github.com/geosolutions-it/MapStore2.git
 [submodule "js/extension"]
 	path = js/extension
-	url = https://gitlab2.si.rennes.fr/sig/ed/RTGE.git
-	#url = https://gitlab2.si.rennes.fr/sig/ed/RTGE/RTGE.git
+	#url = https://gitlab2.si.rennes.fr/sig/ed/RTGE.git
+	url = https://gitlab2.si.rennes.fr/sig/ed/rtge/RTGE.git
