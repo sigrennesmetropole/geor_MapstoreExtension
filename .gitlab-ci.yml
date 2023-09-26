@@ -7,4 +7,4 @@ build:
         - npm run ext:build
     variables:
         GIT_SUBMODULE_STRATEGY: recursive
-        GIT_SUBMODULE_PATHS: :(exclude)"js/extension"
+        GIT_SUBMODULE_FORCE_HTTPS: "true"
