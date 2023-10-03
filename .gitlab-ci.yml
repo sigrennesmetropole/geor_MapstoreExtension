@@ -8,9 +8,12 @@ build:
         - git clone https://build:${PLUGIN_RTGE_TOKEN}@gitlab2.si.rennes.fr/sig/ed/rtge/RTGE.git js/extension
         - rm -rf MapStore2
         - git clone https://github.com/geosolutions-it/MapStore2.git MapStore2
-        - npm install 
+        - npm ci
         - npm run ext:build
     variables:
         GIT_SUBMODULE_STRATEGY: none
         #GIT_SUBMODULE_FORCE_HTTPS: "true"
         #GIT_SUBMODULE_PATHS: Mapstore2 js/extension
+    artifacts:
+        path: dist/SampleExtension.zip
+        expireIn: 1 day
