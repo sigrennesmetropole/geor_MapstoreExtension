@@ -3,11 +3,10 @@ build:
     image: node:14-bullseye
     script: 
         - echo plop
-        - rm -rf js/extension
+        - cd $CI_PROJECT_DIR
         - git clone https://build:${PLUGIN_RTGE_TOKEN}@gitlab2.si.rennes.fr/sig/ed/rtge/RTGE.git js/extension
-        - rm -rf MapStore2
         - git clone https://github.com/geosolutions-it/MapStore2.git MapStore2
-        - npm install || cat /root/.npm/_logs/*.log
+        - npm install 
         - npm run ext:build
     variables:
         GIT_SUBMODULE_STRATEGY: none
