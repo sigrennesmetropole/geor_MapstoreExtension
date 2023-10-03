@@ -15,5 +15,6 @@ build:
         #GIT_SUBMODULE_FORCE_HTTPS: "true"
         #GIT_SUBMODULE_PATHS: Mapstore2 js/extension
     artifacts:
-        paths: dist/SampleExtension.zip
+        paths: 
+            - dist/SampleExtension.zip
         expire_in: 1 day
