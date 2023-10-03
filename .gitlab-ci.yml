@@ -4,10 +4,12 @@ build:
     script: 
         - echo plop
         - cd $CI_PROJECT_DIR
-        - rm -rf js/extension
-        - git clone https://build:${PLUGIN_RTGE_TOKEN}@gitlab2.si.rennes.fr/sig/ed/rtge/RTGE.git js/extension
-        - rm -rf MapStore2
-        - git clone https://github.com/geosolutions-it/MapStore2.git MapStore2
+        - git submodule update js/extension
+        - git submodule update MapStore2
+        #- rm -rf js/extension
+        #- git clone https://build:${PLUGIN_RTGE_TOKEN}@gitlab2.si.rennes.fr/sig/ed/rtge/RTGE.git js/extension
+        #- rm -rf MapStore2
+        #- git clone https://github.com/geosolutions-it/MapStore2.git MapStore2
         - npm ci
         - npm run ext:build
     variables:
