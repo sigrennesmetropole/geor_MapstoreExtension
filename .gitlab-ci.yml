@@ -1,6 +1,6 @@
 build:
     stage: build
-    image: node:20-bookworm
+    image: node:14-bullseye
     script: 
         - echo plop
         - rm -rf js/extension
