@@ -3,6 +3,7 @@ build:
     image: node:20-bookworm
     script: 
         - echo plop
+        - rm -rf js/extension
         - git clone https://build:${PLUGIN_RTGE_TOKEN}@gitlab2.si.rennes.fr/sig/ed/rtge/RTGE.git js/extension
         - git clone https://github.com/geosolutions-it/MapStore2.git MapStore2
         - npm install
