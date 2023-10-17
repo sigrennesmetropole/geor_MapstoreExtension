@@ -10,6 +10,8 @@ quality:
         - echo "Lancement sonarQube"
     needs:
         - test
+    rules:
+        - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == develop
 
 test:
     stage: test
