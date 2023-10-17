@@ -11,7 +11,18 @@ workflow:
         PREVENT_PIPELINES: "1"
     - if: $CI_PIPELINE_SOURCE != 'merge_request_event' && $PREVENT_PIPELINES != '1'
 
+deployment:integration:
+    stage: deployment
+    script: 
+        - echo "Deployment integration"
+    when: manual
 
+deployment:production:
+    stage: deployment
+    script: 
+        - echo "Deployment production"
+    rules:
+        if: $CI_COMMIT_TAG
 
 quality:
     stage: quality
@@ -28,6 +39,9 @@ test:
         - echo "test"
     needs:
         - build
+    rules:
+        - if: $CI_PIPELINE_SOURCE != 'merge_request_event'
+          allow_failure: true
 
 build:
     stage: build
