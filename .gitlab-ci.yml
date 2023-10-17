@@ -7,8 +7,6 @@ stages:
 workflow:
   rules:
     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-      variables:
-        PREVENT_PIPELINES: "1"
     - if: $CI_PIPELINE_SOURCE != 'merge_request_event' && $PREVENT_PIPELINES != '1'
 
 deployment:integration:
