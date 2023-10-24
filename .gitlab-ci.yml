@@ -64,5 +64,3 @@ debug:
     stage: build
     script:
         - env
-    needs:
-        - build
