@@ -20,7 +20,7 @@ deployment:integration:
         - echo "Deployment integration"
     environment: develop
     rules:
-        - <<: *standart
+        <<: *standart
 
 deployment:production:
     stage: deployment
