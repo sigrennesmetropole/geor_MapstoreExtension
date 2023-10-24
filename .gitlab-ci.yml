@@ -4,6 +4,11 @@ stages:
     - quality
     - deployment
 
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_BRANCH
+
 deployment:integration:
     stage: deployment
     script: 
