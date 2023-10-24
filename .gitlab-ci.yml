@@ -6,8 +6,13 @@ stages:
 
 workflow:
   rules:
-    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-    - if: $CI_COMMIT_BRANCH
+    - if: $CI_PIPELINE_SOURCE == 'pipeline'
+
+.qualite: &qualite
+        - if: $PARENT_WORKFLOW == 'review'
+
+.standart: &standart
+        - if: $PARENT_WORKFLOW == 'standart'
 
 deployment:integration:
     stage: deployment
@@ -15,6 +20,8 @@ deployment:integration:
         - echo "Deployment integration"
     when: manual
     environment: develop
+    rules:
+        - *standart
 
 deployment:production:
     stage: deployment
@@ -29,8 +36,8 @@ quality:
         - echo "Lancement sonarQube"
     needs:
         - test
-    rules:
-        - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "develop"
+    rules: 
+        - *qualite
 
 test:
     stage: test
@@ -38,16 +45,14 @@ test:
         - echo "test"
     needs:
         - build
-    rules:
-        - if: $CI_PIPELINE_SOURCE != 'merge_request_event'
-          allow_failure: true
-        - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    rules: 
+        - *qualite
+        - *standart
 
 build:
     stage: build
     image: node:14-bullseye
     script: 
-        - echo plop
         - cd $CI_PROJECT_DIR
         - git submodule update js/extension
         - git submodule update MapStore2
@@ -59,6 +64,9 @@ build:
         paths: 
             - dist/SampleExtension.zip
         expire_in: 1 day
+    rules: 
+        - *qualite
+        - *standart
 
 debug:
     stage: build
