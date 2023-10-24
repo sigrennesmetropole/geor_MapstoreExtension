@@ -8,19 +8,13 @@ workflow:
   rules:
     - if: $CI_PIPELINE_SOURCE == 'pipeline'
 
-.qualite: &qualite
-        - if: $PARENT_WORKFLOW == 'review'
-
-.standart: &standart
-        - if: $PARENT_WORKFLOW == 'standart'
-
 deployment:integration:
     stage: deployment
     script: 
         - echo "Deployment integration"
     environment: develop
     rules:
-        <<: *standart
+        - if: $PARENT_WORKFLOW == 'standart'
 
 deployment:production:
     stage: deployment
@@ -36,7 +30,7 @@ quality:
     needs:
         - test
     rules: 
-        - *qualite
+        - if: $PARENT_WORKFLOW == 'review'
 
 test:
     stage: test
@@ -45,8 +39,8 @@ test:
     needs:
         - build
     rules: 
-        - *qualite
-        - *standart
+        - if: $PARENT_WORKFLOW == 'review'
+        - if: $PARENT_WORKFLOW == 'standart'
 
 build:
     stage: build
@@ -64,8 +58,8 @@ build:
             - dist/SampleExtension.zip
         expire_in: 1 day
     rules: 
-        - *qualite
-        - *standart
+        - if: $PARENT_WORKFLOW == 'review'
+        - if: $PARENT_WORKFLOW == 'standart'
 
 debug:
     stage: build
