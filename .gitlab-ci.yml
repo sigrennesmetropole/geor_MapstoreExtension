@@ -59,3 +59,10 @@ build:
         paths: 
             - dist/SampleExtension.zip
         expire_in: 1 day
+
+debug:
+    stage: build
+    script:
+        - env
+    needs:
+        - build
