@@ -18,7 +18,6 @@ deployment:integration:
     stage: deployment
     script: 
         - echo "Deployment integration"
-    when: manual
     environment: develop
     rules:
         - *standart
