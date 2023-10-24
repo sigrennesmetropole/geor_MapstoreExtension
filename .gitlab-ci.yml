@@ -48,6 +48,8 @@ build:
     script: 
         - cd $CI_PROJECT_DIR
         - git submodule update js/extension
+        - cd js/extension && git checkout -b $PIPELINE_ID $PARENT_COMMIT_SHA
+        - cd $CI_PROJECT_DIR
         - git submodule update MapStore2
         - npm ci
         - npm run ext:build
