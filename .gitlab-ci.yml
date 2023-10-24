@@ -14,7 +14,7 @@ deployment:integration:
         - echo "Deployment integration"
     environment: develop
     rules:
-        - if: $PARENT_WORKFLOW == 'standart'
+        - if: $PARENT_COMMIT_BRANCH
 
 deployment:production:
     stage: deployment
@@ -30,7 +30,7 @@ quality:
     needs:
         - test
     rules: 
-        - if: $PARENT_WORKFLOW == 'review'
+        - if: $PARENT_PIPELINE_SOURCE == 'merge_request_event'
 
 test:
     stage: test
@@ -39,8 +39,8 @@ test:
     needs:
         - build
     rules: 
-        - if: $PARENT_WORKFLOW == 'review'
-        - if: $PARENT_WORKFLOW == 'standart'
+        - if: $PARENT_PIPELINE_SOURCE == 'merge_request_event'
+        - if: $PARENT_COMMIT_BRANCH
 
 build:
     stage: build
@@ -58,8 +58,8 @@ build:
             - dist/SampleExtension.zip
         expire_in: 1 day
     rules: 
-        - if: $PARENT_WORKFLOW == 'review'
-        - if: $PARENT_WORKFLOW == 'standart'
+        - if: $PARENT_PIPELINE_SOURCE == 'merge_request_event'
+        - if: $PARENT_COMMIT_BRANCH
 
 debug:
     stage: build
