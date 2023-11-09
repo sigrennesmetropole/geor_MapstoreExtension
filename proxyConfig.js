@@ -1,7 +1,7 @@
 // this file contains configurations for dev proxy
 
-const DEV_PROTOCOL = "http";
-const DEV_HOST = "localhost:8080";
+// const DEV_PROTOCOL = "http";
+// const DEV_HOST = "localhost:8080";
 
 module.exports = {
     '/rest': {
@@ -31,6 +31,14 @@ module.exports = {
         headers: {
             host: "dev-mapstore2.geosolutionsgroup.com"
         }
+    },
+    '/geoserver': {
+        target: "https://portail-test.sig.rennesmetropole.fr",
+        secure: false,
+        headers: {
+            host: "portail-test.sig.rennesmetropole.fr"
+        },
+        changeOrigin: true
     },
     '/docs': {
         target: "http://localhost:8081",

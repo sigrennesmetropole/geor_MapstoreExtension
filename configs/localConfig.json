@@ -278,7 +278,7 @@
             },
             "FeedbackMask"
         ],
-        "desktop": ["Details", "RTGE",
+        "desktop": ["Details", "SampleExtension",
           {
             "name": "Map",
             "cfg": {
