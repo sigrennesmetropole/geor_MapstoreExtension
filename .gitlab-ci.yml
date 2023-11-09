@@ -6,15 +6,15 @@ stages:
 
 workflow:
   rules:
-    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-    - if: $CI_PIPELINE_SOURCE != 'merge_request_event' && $PREVENT_PIPELINES != '1'
+    - if: $CI_PIPELINE_SOURCE == 'pipeline'
 
 deployment:integration:
     stage: deployment
     script: 
         - echo "Deployment integration"
-    when: manual
     environment: develop
+    rules:
+        - if: $PARENT_COMMIT_BRANCH
 
 deployment:production:
     stage: deployment
@@ -29,8 +29,8 @@ quality:
         - echo "Lancement sonarQube"
     needs:
         - test
-    rules:
-        - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "develop"
+    rules: 
+        - if: $PARENT_PIPELINE_SOURCE == 'merge_request_event'
 
 test:
     stage: test
@@ -38,18 +38,18 @@ test:
         - echo "test"
     needs:
         - build
-    rules:
-        - if: $CI_PIPELINE_SOURCE != 'merge_request_event'
-          allow_failure: true
-        - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    rules: 
+        - if: $PARENT_PIPELINE_SOURCE == 'merge_request_event'
+        - if: $PARENT_COMMIT_BRANCH
 
 build:
     stage: build
     image: node:14-bullseye
     script: 
-        - echo plop
         - cd $CI_PROJECT_DIR
         - git submodule update js/extension
+        - cd js/extension && git checkout -b $PIPELINE_ID $PARENT_COMMIT_SHA
+        - cd $CI_PROJECT_DIR
         - git submodule update MapStore2
         - npm ci
         - npm run ext:build
@@ -59,3 +59,11 @@ build:
         paths: 
             - dist/SampleExtension.zip
         expire_in: 1 day
+    rules: 
+        - if: $PARENT_PIPELINE_SOURCE == 'merge_request_event'
+        - if: $PARENT_COMMIT_BRANCH
+
+debug:
+    stage: build
+    script:
+        - env
