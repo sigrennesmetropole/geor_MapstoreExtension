@@ -4,6 +4,9 @@ stages:
     - quality
     - deployment
 
+tags:
+    - build
+
 workflow:
   rules:
     - if: $CI_PIPELINE_SOURCE == 'pipeline'
