@@ -4,8 +4,9 @@ stages:
     - quality
     - deployment
 
-tags:
-    - build
+default:
+    tags:
+        - build
 
 workflow:
   rules:
