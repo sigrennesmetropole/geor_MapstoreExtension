@@ -3,6 +3,7 @@ stages:
     - test
     - quality
     - deployment
+    - publish
 
 workflow:
   rules:
@@ -59,6 +60,14 @@ build:
         paths: 
             - dist/SampleExtension.zip
         expire_in: 1 day
+    rules: 
+        - if: $PARENT_PIPELINE_SOURCE == 'merge_request_event'
+        - if: $PARENT_COMMIT_BRANCH
+
+publish:
+    stage: publish
+    script:
+        - curl -k -u "$NEXUS_ACCOUNT_LOGIN:$NEXUS_ACCOUNT_PWD" -H 'Content-Type: multipart/form-data' --data-binary "@dist/SampleExtension.zip" -X PUT https://nexus.si.rennes.fr/repository/sig-raw-hosted/$PIPELINE_ID/RTGE.zip
     rules: 
         - if: $PARENT_PIPELINE_SOURCE == 'merge_request_event'
         - if: $PARENT_COMMIT_BRANCH
