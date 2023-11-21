@@ -6,10 +6,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import RTGEExtension from './extension/plugins/RTGEExtension';
+import Extension from './extension/plugins/Extension';
 import { name } from '../config';
 
 
 export default {
-    [name]: RTGEExtension
+    [name]: Extension
 };
