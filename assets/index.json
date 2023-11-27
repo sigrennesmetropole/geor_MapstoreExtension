@@ -1,9 +1,9 @@
 {
   "plugins": [
     {
-      "name": "RTGE",
+      "name": "RTGEExtension",
       "dependencies": [
-        "SidebarMenu"
+        "Toolbar"
       ]
     }
   ]
