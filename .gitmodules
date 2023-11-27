@@ -5,3 +5,6 @@
 	path = js/extension
 	#url = https://gitlab2.si.rennes.fr/sig/ed/RTGE.git
 	url = https://gitlab2.si.rennes.fr/sig/ed/rtge/RTGE.git
+[submodule "mapstore2-georchestra"]
+	path = mapstore2-georchestra
+	url = https://github.com/georchestra/mapstore2-georchestra.git

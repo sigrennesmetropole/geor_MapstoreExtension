@@ -40,6 +40,14 @@ module.exports = {
         },
         changeOrigin: true
     },
+    '/console': {
+        target: "https://portail-test.sig.rennesmetropole.fr",
+        secure: false,
+        headers: {
+            host: "portail-test.sig.rennesmetropole.fr"
+        },
+        changeOrigin: true
+    },
     '/docs': {
         target: "http://localhost:8081",
         pathRewrite: {'/docs': '/mapstore/docs'}
