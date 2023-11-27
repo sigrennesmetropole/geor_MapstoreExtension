@@ -5,7 +5,43 @@
             "message": "Message !"
         },
         "RTGE": {
-            "title": "RTGE"
+            "title": "RTGE",
+            "prenom": "Prénom",
+            "nom": "Nom",
+            "collectivite": "Collectivité",
+            "service": "Service",
+            "courriel": "Courriel",
+            "telephone": "Téléphone",
+            "motivation": "Motivation - Projet",
+            "dataType": "Type de données",
+            "dataSurf": "Données surface",
+            "dataUnderSurf": "Données sous-sol",
+            "alertMaxFeatures": {
+                "title": "Avertissement",
+                "message": "Vous avez dépassé le nombre maximum de dalles"
+            },
+            "sendMailSuccess": {
+                "title": "Succès",
+                "message": "L'envoi de mail s'est effectué avec succès"
+            },
+            "sendMailFailure": {
+                "title": "Echec",
+                "message": "Il y a eu un échec lors de l'envoi de mail"
+            },
+            "welcome": "Accueil",
+            "selection": "Selection",
+            "selectionTab": {
+                "identifier": "Identifiant",
+                "update": "Date MAJ",
+                "aboveground": "Nb d'objets surf",
+                "underground": "Nb d'objets ssol",
+                "tiles": "tuiles"
+            },
+            "send": "Envoi",
+            "sendTab": {
+                "button": "Envoyer mail"
+            },
+            "sample": "<Message msgId={'RTGE.'}/>"
         }
     }
 }

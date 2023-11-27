@@ -3,6 +3,7 @@ stages:
     - test
     - quality
     - deployment
+    - publish
 
 workflow:
   rules:
@@ -47,19 +48,30 @@ build:
     image: node:14-bullseye
     script: 
         - cd $CI_PROJECT_DIR
-        - git submodule update js/extension
-        - cd js/extension && git checkout -b $PIPELINE_ID $PARENT_COMMIT_SHA
+        #- git submodule update js/extension
+        - cd js/extension && git fetch && git checkout -b $CI_PIPELINE_ID $PARENT_COMMIT_SHA
         - cd $CI_PROJECT_DIR
-        - git submodule update MapStore2
+        #- git submodule update MapStore2
         - npm ci
         - npm run ext:build
-    variables:
-        GIT_SUBMODULE_STRATEGY: none
+    #variables:
+        #GIT_SUBMODULE_STRATEGY: none
     artifacts:
         paths: 
-            - dist/SampleExtension.zip
+            - dist/RTGEExtension.zip
         expire_in: 1 day
     rules: 
+        - if: $PARENT_PIPELINE_SOURCE == 'merge_request_event'
+        - if: $PARENT_COMMIT_BRANCH
+
+publish:
+    stage: publish
+    image: node:14-bullseye
+    script:
+        - cd $CI_PROJECT_DIR
+        #- 'curl -k -u "$NEXUS_ACCOUNT_LOGIN:$NEXUS_ACCOUNT_PWD" -H "Content-Type: multipart/form-data" --data-binary "@dist/RTGEExtension.zip" -X PUT https://nexus.si.rennes.fr/repository/sig-raw-hosted/$PIPELINE_ID/RTGE.zip'
+        - 'curl -u "$NEXUS_ACCOUNT_LOGIN:$NEXUS_ACCOUNT_PWD" --upload-file dist/RTGEExtension.zip https://nexus.si.rennes.fr/repository/sig-raw-hosted/$PIPELINE_ID/RTGE.zip'
+    rules:
         - if: $PARENT_PIPELINE_SOURCE == 'merge_request_event'
         - if: $PARENT_COMMIT_BRANCH
 
