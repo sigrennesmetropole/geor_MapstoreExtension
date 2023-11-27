@@ -58,7 +58,7 @@ build:
         #GIT_SUBMODULE_STRATEGY: none
     artifacts:
         paths: 
-            - dist/SampleExtension.zip
+            - dist/RTGEExtension.zip
         expire_in: 1 day
     rules: 
         - if: $PARENT_PIPELINE_SOURCE == 'merge_request_event'
@@ -69,8 +69,8 @@ publish:
     image: node:14-bullseye
     script:
         - cd $CI_PROJECT_DIR
-        #- 'curl -k -u "$NEXUS_ACCOUNT_LOGIN:$NEXUS_ACCOUNT_PWD" -H "Content-Type: multipart/form-data" --data-binary "@dist/SampleExtension.zip" -X PUT https://nexus.si.rennes.fr/repository/sig-raw-hosted/$PIPELINE_ID/RTGE.zip'
-        - 'curl -u "$NEXUS_ACCOUNT_LOGIN:$NEXUS_ACCOUNT_PWD" --upload-file dist/SampleExtension.zip https://nexus.si.rennes.fr/repository/sig-raw-hosted/$PIPELINE_ID/RTGE.zip'
+        #- 'curl -k -u "$NEXUS_ACCOUNT_LOGIN:$NEXUS_ACCOUNT_PWD" -H "Content-Type: multipart/form-data" --data-binary "@dist/RTGEExtension.zip" -X PUT https://nexus.si.rennes.fr/repository/sig-raw-hosted/$PIPELINE_ID/RTGE.zip'
+        - 'curl -u "$NEXUS_ACCOUNT_LOGIN:$NEXUS_ACCOUNT_PWD" --upload-file dist/RTGEExtension.zip https://nexus.si.rennes.fr/repository/sig-raw-hosted/$PIPELINE_ID/RTGE.zip'
     rules:
         - if: $PARENT_PIPELINE_SOURCE == 'merge_request_event'
         - if: $PARENT_COMMIT_BRANCH
