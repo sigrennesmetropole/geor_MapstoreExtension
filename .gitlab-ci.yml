@@ -54,8 +54,8 @@ build:
         #- git submodule update MapStore2
         - npm ci
         - npm run ext:build
-    #variables:
-        #GIT_SUBMODULE_STRATEGY: none
+    variables:
+        GIT_SUBMODULE_STRATEGY: recursive
     artifacts:
         paths: 
             - dist/RTGEExtension.zip
