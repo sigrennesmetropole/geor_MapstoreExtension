@@ -16,6 +16,7 @@
             "dataType": "Type de données",
             "dataSurf": "Données surface",
             "dataUnderSurf": "Données sous-sol",
+            "dataUnderSurfWarning" : "Merci de reseigner vos motivations",
             "alertMaxFeatures": {
                 "title": "Avertissement",
                 "message": "Vous avez dépassé le nombre maximum de dalles"
