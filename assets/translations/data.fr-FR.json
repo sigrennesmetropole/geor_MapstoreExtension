@@ -17,6 +17,7 @@
             "dataSurf": "Données surface",
             "dataUnderSurf": "Données sous-sol",
             "dataUnderSurfWarning" : "Merci de reseigner vos motivations",
+            "grayTooltip" : "L'envoi est bloqué lorsqu'aucune tuile n'est sélectionnée",
             "alertMaxFeatures": {
                 "title": "Avertissement",
                 "message": "Vous avez dépassé le nombre maximum de dalles"
