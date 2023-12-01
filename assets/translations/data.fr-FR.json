@@ -16,19 +16,19 @@
             "dataType": "Type de données",
             "dataSurf": "Données surface",
             "dataUnderSurf": "Données sous-sol",
-            "dataUnderSurfWarning" : "Merci de reseigner vos motivations",
-            "grayTooltip" : "L'envoi est bloqué lorsqu'aucune tuile n'est sélectionnée",
+            "dataUnderSurfWarning" : "Assurez-vous de renseigner précisément votre besoin dans la zone 'Motivations - Projet'",
+            "sendBtnDisabled" : "Veuillez effectuer une sélection afin de pouvoir envoyer votre demande",
             "alertMaxFeatures": {
                 "title": "Avertissement",
-                "message": "Vous avez dépassé le nombre maximum de dalles"
+                "message": "Le nombre de dalles sélectionnées est supérieur au maximum autorisé"
             },
             "sendMailSuccess": {
                 "title": "Succès",
-                "message": "L'envoi de mail s'est effectué avec succès"
+                "message": "Votre demande d'extraction a été envoyée"
             },
             "sendMailFailure": {
                 "title": "Echec",
-                "message": "Il y a eu un échec lors de l'envoi de mail"
+                "message": "Erreur lors de l'envoi du mail, votre demande n'a pas pu être envoyée"
             },
             "welcome": "Accueil",
             "selection": "Selection",
@@ -42,6 +42,12 @@
             "send": "Envoi",
             "sendTab": {
                 "button": "Envoyer mail"
+            },
+            "tooltips": {
+                "tooltipSelectPoint" : "Sélectionner par simple clic",
+                "tooltipSeclectLine" : "Sélectionner par une polyligne",
+                "tooltipSelectPolygon" : "Sélectionner par un polygone",
+                "tooltipTrash" : "Retirer dalle(s) sélectionnée(s)" 
             },
             "sample": "<Message msgId={'RTGE.'}/>"
         }
