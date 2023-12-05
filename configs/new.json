@@ -2,7 +2,7 @@
 	"map": {
 		"projection": "EPSG:3857",
     "units": "m",
-    "center": {"x": -170849.00, "y": 6129632.00, "crs": "EPSG:3857"},
+    "center": {"x": -160849.00, "y": 6129632.00, "crs": "EPSG:3857"},
     "zoom": 12,
     "maxExtent": [
       -20037508.34,

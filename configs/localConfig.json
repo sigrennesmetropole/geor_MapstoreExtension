@@ -283,7 +283,7 @@
           "cfg": {
             "rtgeGridLayerId": "ref_topo:rmtr_carroyage",
             "rtgeBackendURLPrefix": "",
-            "rtgeGridLayerName": "rmtr_carroyage",
+            "rtgeGridLayerName": "ref_topo:rmtr_carroyage",
             "rtgeGridLayerTitle": "RTGE : Carroyage au 1/200",
             "rtgeGridLayerProjection": "EPSG:3948",
             "rtgeEmailUrl": "/console/emailProxy",
