@@ -17,6 +17,8 @@
             "dataSurf": "Données surface",
             "dataUnderSurf": "Données sous-sol",
             "dataUnderSurfWarning" : "Assurez-vous de renseigner précisément votre besoin dans la zone 'Motivations - Projet'",
+            "schematicalNetwork": "Réseau Schématique",
+            "schematicalNetworkWarning": "Données dont le tracé est indicatif",
             "sendBtnDisabled" : "Veuillez effectuer une sélection afin de pouvoir envoyer votre demande",
             "alertMaxFeatures": {
                 "title": "Avertissement",
