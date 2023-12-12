@@ -23,19 +23,19 @@
             {
               "attribute": "cases_200",
               "title": "Identifiant",
-              "colWidth": "col-sm-4"
+              "colWidth": "col-sm-5"
             },{
               "attribute": "date_der_maj",
               "title": "Date MAJ",
-              "colWidth": "col-sm-2"
+              "colWidth": "col-sm-3"
             },{
               "attribute": "nb_donnees_surf",
-              "title": "Nb d'objets surf",
-              "colWidth": "col-sm-3"
+              "title": "Nb obj surf",
+              "colWidth": "col-sm-2"
             },{
               "attribute": "nb_donnees_ssol",
-              "title": "Nb d'objets ssol",
-              "colWidth": "col-sm-3"
+              "title": "Nb obj ssol",
+              "colWidth": "col-sm-2"
             }
           ]
       }

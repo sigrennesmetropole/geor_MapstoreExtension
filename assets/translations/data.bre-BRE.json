@@ -1,0 +1,53 @@
+    {
+    "locale": "bzh-BZH",
+    "messages": {
+        "extension": {
+            "message": "Message !"
+        },
+        "RTGE": {
+            "title": "RTGE",
+            "prenom": "Kentanv",
+            "nom": "Anv",
+            "collectivite": "Strollegezh",
+            "service": "Servij",
+            "courriel": "Postel",
+            "telephone": "pellgomzer",
+            "motivation": "Abeg - Raktres",
+            "dataType": "Seurt roadennoù",
+            "dataSurf": "Roadennoù gorread",
+            "dataUnderSurf": "Roadennoù danzouar",
+            "dataUnderSurfWarning" : "Ha sur oc'h da ditouriñ resis hoc'h ezhomm er c'hornad 'Dregerezhioù - Raktres'",
+            "schematicalNetwork": "Rouedad Brastresoù",
+            "schematicalNetworkWarning": "Roadennoù a ro da c'houzout an tres",
+            "sendBtnDisabled" : "Grit un diuzad evit gellout kas ho koulenn",
+            "alertMaxFeatures": {
+                "title": "Kemenn diwall",
+                "message": "An niver a lec'hioù diuzet zo brasoc'h eget ar muiañ ma vez aotreet"
+            },
+            "sendMailSuccess": {
+                "title": "Berzh bras",
+                "message": "Kaset eo bet ho koulenn eztennañ"
+            },
+            "sendMailFailure": {
+                "title": "C'hwitadenn",
+                "message": "Fazi en ur gas ar postel, n'haller ket kas ho koulenn"
+            },
+            "welcome": "degemer",
+            "selection": " dibab",
+            "selectionTab": {
+                "tiles": "teol"
+            },
+            "send": "kasadenn",
+            "sendTab": {
+                "button": "Kas postel"
+            },
+            "tooltips": {
+                "tooltipSelectPoint" : "Diuzañ dre glikañ eeun",
+                "tooltipSeclectLine" : "Diuzañ gant ul lieslinenn",
+                "tooltipSelectPolygon" : "Diuzañ gant ul lieskostez",
+                "tooltipTrash" : "Tennañ al lec'h diuzet" 
+            },
+            "sample": "<Message msgId={'RTGE.'}/>"
+        }
+    }
+}

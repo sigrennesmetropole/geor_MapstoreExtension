@@ -35,10 +35,6 @@
             "welcome": "Accueil",
             "selection": "Selection",
             "selectionTab": {
-                "identifier": "Identifiant",
-                "update": "Date MAJ",
-                "aboveground": "Nb d'objets surf",
-                "underground": "Nb d'objets ssol",
                 "tiles": "tuiles"
             },
             "send": "Envoi",
