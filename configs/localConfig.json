@@ -281,9 +281,9 @@
         "desktop": ["Details", {
           "name": "RTGEExtension",
           "cfg": {
-            "rtgeGridLayerId": "ref_topo:rmtr_carroyage",
+            "rtgeGridLayerId": "ref_topo:rtge_carroyage",
             "rtgeBackendURLPrefix": "",
-            "rtgeGridLayerName": "ref_topo:rmtr_carroyage",
+            "rtgeGridLayerName": "ref_topo:rtge_carroyage",
             "rtgeGridLayerTitle": "RTGE : Carroyage au 1/200",
             "rtgeGridLayerProjection": "EPSG:3948",
             "rtgeEmailUrl": "/console/emailProxy",

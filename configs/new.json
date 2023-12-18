@@ -67,8 +67,8 @@
       {
         "handleClickOnLayer": true,
         "hideLoading": true,
-        "id": "ref_topo:rmtr_carroyage",
-        "name": "rmtr_carroyage",
+        "id": "ref_topo:rtge_carroyage",
+        "name": "rtge_carroyage",
         "title": "RTGE : Carroyage au 1/200",
         "tiled": false,
         "type": "wms",

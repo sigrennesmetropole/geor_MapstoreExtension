@@ -12,13 +12,13 @@
             "service": "Service",
             "courriel": "E-Mail",
             "telephone": "Phone",
-            "motivation": "Motivation - Projet",
+            "motivation": "Motivation - Project",
             "dataType": "Data type",
             "dataSurf": "Aboveground Data",
             "dataUnderSurf": "Underground Data",
             "dataUnderSurfWarning" : "Make sure to specify your needs precisely in the 'Motivations - Project' area.",
             "schematicalNetwork": "Schematical Networks",
-            "schematicalNetworkWarning": "données dont le tracé est indicatif",
+            "schematicalNetworkWarning": "data for which the drawing is indicative",
             "sendBtnDisabled" : "Please make a selection so that you can submit your request",
             "alertMaxFeatures": {
                 "title": "Warning",
@@ -41,7 +41,7 @@
                 "underground": "Nb object ugd",
                 "tiles": "tiles"
             },
-            "send": "Dispatch",
+            "send": "Send mail",
             "sendTab": {
                 "button": "Send mail"
             },
