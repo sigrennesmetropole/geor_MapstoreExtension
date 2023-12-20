@@ -114,6 +114,8 @@
     },
     "dependencies": {
         "mapstore2": "file:MapStore2",
+        "react-native": "^0.73.1",
+        "react-native-web": "^0.19.9",
         "react-phone-number-input": "^3.3.7",
         "xtemplate": "^5.0.11"
     },

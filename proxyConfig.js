@@ -9,7 +9,8 @@ module.exports = {
         secure: false,
         headers: {
             host: "portail-test.sig.rennesmetropole.fr"
-        }
+        },
+        changeOrigin: true
     },
     '/pdf': {
         target: "https://dev-mapstore2.geosolutionsgroup.com/mapstore",

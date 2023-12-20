@@ -45,8 +45,10 @@
                 "tooltipSelectPoint" : "Sélectionner par simple clic",
                 "tooltipSeclectLine" : "Sélectionner par une polyligne",
                 "tooltipSelectPolygon" : "Sélectionner par un polygone",
-                "tooltipTrash" : "Retirer dalle(s) sélectionnée(s)" 
+                "tooltipTrash" : "Retirer dalle(s) sélectionnée(s)" ,
+                "tooltipRefresh" : "Retirer toute(s) les dalle(s)" 
             },
+            "spinnerMsg": "Envoi du mail...",
             "sample": "<Message msgId={'RTGE.'}/>"
         }
     }
