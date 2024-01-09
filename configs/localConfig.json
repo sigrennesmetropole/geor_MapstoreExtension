@@ -314,7 +314,7 @@
                 "colWidth": "col-sm-2"
               }
             ],
-            "rtgeUndergroundDataRoles": ["MAPSTORE_ADMIN"]
+            "rtgeUndergroundDataRoles": ["EL_APPLIS_RMTR_SSOL"]
           }
         },
           {

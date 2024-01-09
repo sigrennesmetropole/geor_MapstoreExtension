@@ -45,7 +45,8 @@
                 "tooltipSelectPoint" : "Seleziona con un solo clic",
                 "tooltipSeclectLine" : "Seleziona per polilinea",
                 "tooltipSelectPolygon" : "Seleziona per poligono",
-                "tooltipTrash" : "Rimuovi la(e) lastra(e) selezionata(e)" 
+                "tooltipTrashSquare" : "Rimuovi la(e) lastra(e) selezionata(e)"
+                "tooltipTrash" : "Rimuovi tutte le tessere" 
             },
             "sample": "<Message msgId={'RTGE.'}/>"
         }

@@ -45,7 +45,8 @@
                 "tooltipSelectPoint" : "Diuzañ dre glikañ eeun",
                 "tooltipSeclectLine" : "Diuzañ gant ul lieslinenn",
                 "tooltipSelectPolygon" : "Diuzañ gant ul lieskostez",
-                "tooltipTrash" : "Tennañ al lec'h diuzet" 
+                "tooltipTrashSquare" : "Tennañ al lec'h diuzet",
+                "tooltipTrash" : "Dilemel an holl vaeziennoù" 
             },
             "sample": "<Message msgId={'RTGE.'}/>"
         }

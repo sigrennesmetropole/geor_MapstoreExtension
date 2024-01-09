@@ -49,7 +49,8 @@
                 "tooltipSelectPoint" : "Simple clic selection",
                 "tooltipSeclectLine" : "Polyline selection",
                 "tooltipSelectPolygon" : "Polygone selection",
-                "tooltipTrash" : "Remove selected tiles" 
+                "tooltipTrashSquare" : "Remove selected tiles",
+                "tooltipTrash" : "Remove all tiles" 
             },
             "sample": "<Message msgId={'RTGE.'}/>"
         }
