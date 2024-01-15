@@ -286,6 +286,7 @@
             "rtgeGridLayerName": "ref_topo:rtge_carroyage",
             "rtgeGridLayerTitle": "RTGE : Carroyage au 1/200",
             "rtgeGridLayerProjection": "EPSG:3948",
+            "rtgeGridLayerGeometryAttribute": "shape",
             "rtgeEmailUrl": "/console/emailProxy",
             "rtgeUserDetailsUrl": "/console/account/userdetails",
             "rtgeUserRolesUrl": "/mapstore/rest/geostore/users/user/details?includeattributes=true",
