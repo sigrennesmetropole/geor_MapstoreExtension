@@ -17,7 +17,7 @@
             "dataSurf": "Aboveground Data",
             "dataUnderSurf": "Underground Data",
             "dataUnderSurfWarning" : "Make sure to specify your needs precisely in the 'Motivations - Project' area.",
-            "schematicalNetwork": "Schematical Networks",
+            "schematicalNetwork": "Include Schematical Networks",
             "schematicalNetworkWarning": "data for which the drawing is indicative",
             "sendBtnDisabled" : "Please make a selection so that you can submit your request",
             "alertMaxFeatures": {
