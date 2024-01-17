@@ -1,3 +1,3 @@
 module.exports = {
-    name: "RTGEExtension"
+    name: "SampleExtension"
 };

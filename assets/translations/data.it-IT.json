@@ -4,51 +4,9 @@
         "extension": {
             "message": "Messaggio!"
         },
-        "RTGE": {
-            "title": "RTGE",
-            "prenom": "Nome",
-            "nom": "Nome",
-            "collectivite": "Comunità",
-            "service": "Servizio",
-            "courriel": "E-mail",
-            "telephone": "Telefono",
-            "motivation": "Motivazione - Progetto",
-            "dataType": "Tipo di dati",
-            "dataSurf": "Dati di superficie",
-            "dataUnderSurf": "Dati del seminterrato",
-            "dataUnderSurfWarning" : "Assicurati di specificare con precisione le tue esigenze nell'area 'Motivazioni - Progetto'.",
-            "schematicalNetwork": "Includere Rete schematica",
-            "schematicalNetworkWarning": "Dati la cui trama è indicativa",
-            "sendBtnDisabled" : "Effettua una selezione per poter inviare la tua richiesta",
-            "alertMaxFeatures": {
-                "title": "Avvertimento",
-                "message": "Il numero di tessere selezionate è maggiore del massimo consentito"
-            },
-            "sendMailSuccess": {
-                "title": "Successo",
-                "message": "La tua richiesta di pull è stata inviata"
-            },
-            "sendMailFailure": {
-                "title": "Fallimento",
-                "message": "Errore nell'invio dell'email, non è stato possibile inviare la tua richiesta"
-            },
-            "welcome": "accoglienza",
-            "selection": "Selezione",
-            "selectionTab": {
-                "tiles": "tegole"
-            },
-            "send": "Invio",
-            "sendTab": {
-                "button": "Invia una email"
-            },
-            "tooltips": {
-                "tooltipSelectPoint" : "Seleziona con un solo clic",
-                "tooltipSeclectLine" : "Seleziona per polilinea",
-                "tooltipSelectPolygon" : "Seleziona per poligono",
-                "tooltipTrashSquare" : "Rimuovi la(e) lastra(e) selezionata(e)",
-                "tooltipTrash" : "Rimuovi tutte le tessere" 
-            },
-            "sample": "<Message msgId={'RTGE.'}/>"
+        "sampleExtension": {
+            "title": "SampleExtension",
+            "sample": "<Message msgId={'sampleExtension.'}/>"
         }
     }
 }

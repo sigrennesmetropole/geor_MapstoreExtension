@@ -4,55 +4,9 @@
         "extension": {
             "message": "Message!"
         },
-        "RTGE": {
-            "title": "RTGE",
-            "prenom": "Name",
-            "nom": "Surname",
-            "collectivite": "Community",
-            "service": "Service",
-            "courriel": "E-Mail",
-            "telephone": "Phone",
-            "motivation": "Motivation - Project",
-            "dataType": "Data type",
-            "dataSurf": "Aboveground Data",
-            "dataUnderSurf": "Underground Data",
-            "dataUnderSurfWarning" : "Make sure to specify your needs precisely in the 'Motivations - Project' area.",
-            "schematicalNetwork": "Include Schematical Networks",
-            "schematicalNetworkWarning": "data for which the drawing is indicative",
-            "sendBtnDisabled" : "Please make a selection so that you can submit your request",
-            "alertMaxFeatures": {
-                "title": "Warning",
-                "message": "The number of tiles selected is greater than the maximum allowed"
-            },
-            "sendMailSuccess": {
-                "title": "Success",
-                "message": "Your extraction request has been sent"
-            },
-            "sendMailFailure": {
-                "title": "Failure",
-                "message": "Error sending the email, your request could not be sent"
-            },
-            "welcome": "Home",
-            "selection": "Selection",
-            "selectionTab": {
-                "identifier": "Identifier",
-                "update": "Update Date",
-                "aboveground": "Nb object surf",
-                "underground": "Nb object ugd",
-                "tiles": "tiles"
-            },
-            "send": "Send mail",
-            "sendTab": {
-                "button": "Send mail"
-            },
-            "tooltips": {
-                "tooltipSelectPoint" : "Simple clic selection",
-                "tooltipSeclectLine" : "Polyline selection",
-                "tooltipSelectPolygon" : "Polygone selection",
-                "tooltipTrashSquare" : "Remove selected tiles",
-                "tooltipTrash" : "Remove all tiles" 
-            },
-            "sample": "<Message msgId={'RTGE.'}/>"
+        "sampleExtension": {
+            "title": "SampleExtension",
+            "sample": "<Message msgId={'sampleExtension.'}/>"
         }
     }
 }

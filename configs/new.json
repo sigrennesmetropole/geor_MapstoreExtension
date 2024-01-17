@@ -63,30 +63,6 @@
             "visibility": false
           }
         ]
-      },
-      {
-        "handleClickOnLayer": true,
-        "hideLoading": true,
-        "id": "ref_topo:rtge_carroyage",
-        "name": "ref_topo:rtge_carroyage",
-        "title": "RTGE : Carroyage au 1/200",
-        "tiled": false,
-        "type": "wms",
-        "search": {
-            "type": "wfs",
-            "url": "/geoserver/ref_topo/ows"
-        },
-        "params": {
-            "exceptions": "application/vnd.ogc.se_xml"
-        },
-        "allowedSRS": "EPSG:3948",
-        "format": "image/png",
-        "singleTile": false,
-        "url": "/geoserver/ref_topo/wms",
-        "visibility": true,
-        "featureInfo": {
-            "format": "PROPERTIES"
-        }
       }
 		]
 	}

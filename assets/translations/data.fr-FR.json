@@ -4,52 +4,9 @@
         "extension": {
             "message": "Message !"
         },
-        "RTGE": {
-            "title": "RTGE",
-            "prenom": "Prénom",
-            "nom": "Nom",
-            "collectivite": "Collectivité",
-            "service": "Service",
-            "courriel": "Courriel",
-            "telephone": "Téléphone",
-            "motivation": "Motivation - Projet",
-            "dataType": "Type de données",
-            "dataSurf": "Données surface",
-            "dataUnderSurf": "Données sous-sol",
-            "dataUnderSurfWarning" : "Assurez-vous de renseigner précisément votre besoin dans la zone 'Motivations - Projet'",
-            "schematicalNetwork": "Inclure Réseau Schématique",
-            "schematicalNetworkWarning": "Données dont le tracé est indicatif",
-            "sendBtnDisabled" : "Veuillez effectuer une sélection afin de pouvoir envoyer votre demande",
-            "alertMaxFeatures": {
-                "title": "Avertissement",
-                "message": "Le nombre de dalles sélectionnées est supérieur au maximum autorisé"
-            },
-            "sendMailSuccess": {
-                "title": "Succès",
-                "message": "Votre demande d'extraction a été envoyée"
-            },
-            "sendMailFailure": {
-                "title": "Echec",
-                "message": "Erreur lors de l'envoi du mail, votre demande n'a pas pu être envoyée"
-            },
-            "welcome": "Accueil",
-            "selection": "Selection",
-            "selectionTab": {
-                "tiles": "tuiles"
-            },
-            "send": "Envoi",
-            "sendTab": {
-                "button": "Envoyer mail"
-            },
-            "tooltips": {
-                "tooltipSelectPoint" : "Sélectionner par simple clic",
-                "tooltipSeclectLine" : "Sélectionner par une polyligne",
-                "tooltipSelectPolygon" : "Sélectionner par un polygone",
-                "tooltipTrashSquare" : "Retirer dalle(s) sélectionnée(s)" ,
-                "tooltipTrash" : "Retirer toutes les dalles" 
-            },
-            "spinnerMsg": "Envoi du mail...",
-            "sample": "<Message msgId={'RTGE.'}/>"
+        "sampleExtension": {
+            "title": "SampleExtension",
+            "sample": "<Message msgId={'sampleExtension.'}/>"
         }
     }
 }
