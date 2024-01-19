@@ -279,9 +279,9 @@
             "FeedbackMask"
         ],
         "desktop": ["Details", {
-          "name": "SampleExtensionExtension",
+          "name": "SampleExtension",
           "cfg": {
-            "rtgeHomeText": "<h1> Home Text you want </h1><br><h2>Written in HTM of course</h2>"
+            "sampleExtensionHomeText": "<h1> SampleExtension title </h1><br><h2>Written in HTML. Up to you to update the code as you wish</h2>"
           }
         },
           {
