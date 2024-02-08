@@ -29,7 +29,7 @@ II.2.1 - Setting up the repository
 
 To deploy this repository locally, the follow the steps below:
 
-`git clone --recursive https://github.com/sigrennesmetropole/geor_pluginsRM_mapstore/ geor_MapstoreExtension`
+`git clone --recursive https://github.com/sigrennesmetropole/geor_MapstoreExtension`
 
 select the desired branch:
 
