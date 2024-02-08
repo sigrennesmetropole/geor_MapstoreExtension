@@ -8,7 +8,7 @@ This project is used by Rennes Métropole to create custom plugins for Mapstore2
 
 ## II - Using this repository
 
-** II.1 - Repository organization**
+**II.1 - Repository organization**
 
 This repository is a fork of the geosolutions-it MapstoreExtension repository which is a Template for the development of Mapstore2 custom plugins.
 
@@ -23,7 +23,7 @@ Several branches are available for each custom plugin:
 -	As many RM/pluginName_v.VersionNum branches as there are versions: each contains the plugin configuration files for each official release of the plugin.
 
 
-** II.2 - Using the repository **
+**II.2 - Using the repository**
 
 II.2.1 - Setting up the repository
 
