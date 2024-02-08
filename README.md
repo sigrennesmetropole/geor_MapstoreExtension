@@ -1,26 +1,26 @@
-# geor_{CHANGE_NAME}_Mapstore 
+# geor_MapstoreExtension 
 
-**This repository is used by Rennes Métropole as template for the development of customized Mapstore2 plugins for geOrchestra.**
-
-:fr: [Version française](https://github.com/sigrennesmetropole/geor_MapstoreExtension/blob/RM/sampleExtension_main/docs/README_FR.MD).
+:fr: [Version française](https://github.com/sigrennesmetropole/geor_MapstoreExtension/blob/RM/RTGE_main/docs/README_FR.MD).
 
 ## I - General Information
 
-_ Briefly describe what the plugin is for and how it is used at Rennes Métropole _
+This project is used by Rennes Métropole to create custom plugins for Mapstore2. This repository contains the parameters files of these plugins (configuration and translations). It is completed by the repositories of each plugins (as sub-modules), named geor_pluginName_Mapstore, which contain their JS code.
 
 ## II - Using this repository
 
 **II.1 - Repository organization**
 
-This repository is meant to be used with the geor_MapstoreExtension repository:
+This repository is a clone of the geosolutions-it MapstoreExtension repository which is a Template for the development of Mapstore2 custom plugins.
 
--	This repository (geor_{CHANGE_NAME}_Mapstore) contains the JS code of the plugin
--	The geor_MapstoreExtension repository contains the configurations files of the plugin (configs and translations)
+The following sub-modules have been added to this repository:
 
-The "Main" branch is used for the development of the plugin. For each release of the plugin, a new branch is created. The release note will specify the mapstore2-georchestra version for which the plugin version has been created.
+-	Mapstore2-georchestra sub-module: used to make the plugin compatible with Mapstore2 for geOrchestra
+-	geor_pluginName_Mapstore submodules: used to reference JS code of custom plugins. The sub-module varies according to the branch selected.
 
-The settings files for each plugin release are located in the RM/{CHANGE_NAME}_v.NumVersion branch of the geor_MapstoreExtension repository.
+Several branches are available for each custom plugin:
 
+-	RM/pluginName_main branch: contains configuration files for current developments
+-	As many RM/pluginName_v.VersionNum branches as there are versions: each contains the plugin configuration files for each official release of the plugin.
 
 
 **II.2 - Using the repository**
@@ -29,7 +29,7 @@ II.2.1 - Setting up the repository
 
 To deploy this repository locally, the follow the steps below:
 
-`git clone --recursive https://github.com/sigrennesmetropole/geor_pluginsRM_mapstore/ geor_MapstoreExtension`
+`git clone --recursive https://github.com/sigrennesmetropole/geor_MapstoreExtension`
 
 select the desired branch:
 
@@ -65,32 +65,3 @@ Configuration for production build is managed in ./assets/index.json
 ## II.3 - Plugin deployment and installation
 
 Deployment and installation of custom plugins are managed in each plugin repository: geor_pluginName_Mapstore. Details of these procedures are given in the readme of these repositories.
-
-**II.3.1 - CI/CD**
-
-The project CI/CD uses the geor_MapstoreExtension CI/CD file which generates the steps of the continuous integration process. It is important to provide it with the correct project link in order to reach an instance of geor_MapstoreExtension with the correct branch (in our case RM/{CHANGE_NAME}_v.NumVersion) in order to retrieve the correct submodule from the geor_MapstoreExtension directory. The submodule in js/extension corresponds to the corresponding plugin's version.
-
-The steps of the process are automatic and described in the CI files. This process can be described as follows: the plugin calls geor_MapstoreExtension, which generates a build of the plugin and deploys it in a remote repository. This repository has to be set up in the .gitlab-ci.yml of geor_MapstoreExtension ("publish" section). These steps can be modified according to the architecture of your system.
-
-**II.3.2 - Manual Deployment**
-
-To manually starts the build of the plugin, you need to run the following command from the root directory of the project:
-
-`npm run ext:build`
-
-A .zip file is created with the name of the extension in the 'dist' folder.
-
-## III - Installing and configuring the plugin
-
-**III.1 - Installing the plugin**
-
-This plugin is a MapstoreExtension. To install it, simply go to the mapstore map context management interface and click on the "Add an extension to Mapstore" button in the plugin configuration interface to add the plugin using its .zip file.
-
-_ If the plugin works with a back-end: link to the back-end repository and its installation procedure _
-
-**III.2 - Configuring the plugin**
-
-_ Describe here how to configure the plugin in the mapstore map context management interface _
-
-_ If the plugin works with a back-end: link to the back-end repository and its configuration procedure _
-
