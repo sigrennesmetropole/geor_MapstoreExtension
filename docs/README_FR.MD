@@ -10,7 +10,7 @@ Ce projet est utilisé par Rennes Métropole dans le cadre de la réalisation de
 
 **II.1 - Organisation du dépôt**
 
-Ce dépôt est un fork du dépôt MapstoreExtension de geosolutions-it utilisé comme Template pour la création des plugins personnalisés de Mapstore2. 
+Ce dépôt est un clone du dépôt MapstoreExtension de geosolutions-it utilisé comme Template pour la création des plugins personnalisés de Mapstore2. 
 
 A ce dépôt sont ajoutés : 
 
