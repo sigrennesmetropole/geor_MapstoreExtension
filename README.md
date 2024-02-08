@@ -1,120 +1,96 @@
-# Template project to create MapStore extensions
+# geor_{CHANGE_NAME}_Mapstore 
 
-This repository is a template where to start to create [MapStore Extensions](https://mapstore.readthedocs.io/en/latest/developer-guide/extensions/).
+**This repository is used by Rennes Métropole as template for the development of customized Mapstore2 plugins for geOrchestra.**
 
-It is basically a customized MapStore project that allows to run, test and build a sample extension.
-You can copy this repository and modify the sample extension to develop your own one.
+:fr: [Version française](https://github.com/sigrennesmetropole/geor_MapstoreExtension/blob/RM/sampleExtension_main/docs/README_FR.MD).
 
-From 26-08-2022 we started following the release branching procedure we have on main MapStore project. This means two things:
+## I - General Information
 
-- **master** branch here will follow and submodule revision will be aligned to master branch [here](https://github.com/geosolutions-it/MapStore2)
-- **stable branch** will do the same, will follow and submodule revision will be aligned to latest stable branch available
+_ Briefly describe what the plugin is for and how it is used at Rennes Métropole _
 
-## Quick Start
+## II - Using this repository
 
-Clone the repository with the --recursive option to automatically clone submodules.
+**II.1 - Repository organization**
 
-`git clone --recursive https://github.com/geosolutions-it/MapStoreExtension`
+This repository is meant to be used with the geor_MapstoreExtension repository:
 
-Install NodeJS >= 12.16.1 , if needed, from [here](https://nodejs.org/en/download/releases/).
+-	This repository (geor_{CHANGE_NAME}_Mapstore) contains the JS code of the plugin
+-	The geor_MapstoreExtension repository contains the configurations files of the plugin (configs and translations)
 
-You can start the development application locally:
+The "Main" branch is used for the development of the plugin. For each release of the plugin, a new branch is created. The release note will specify the mapstore2-georchestra version for which the plugin version has been created.
 
-`npm install`
+The settings files for each plugin release are located in the RM/{CHANGE_NAME}_v.NumVersion branch of the geor_MapstoreExtension repository.
 
-`npm start`
 
-The application runs at `http://localhost:8081` afterwards. You will see, opening a map, the sample plugin on top of the map.
 
-## Start creating your own extension
+**II.2 - Using the repository**
 
-If you have to create an extension, you will have to
+II.2.1 - Setting up the repository
 
-- find a name for it
-- write the code/css for the plugin and its reducers/epics to implement the effective extension.
+To deploy this repository locally, the follow the steps below:
 
-### Naming the plugin
+`git clone --recursive https://github.com/sigrennesmetropole/geor_pluginsRM_mapstore/ geor_MapstoreExtension`
 
-The first step to create the plugin is to name it. To do it, you have to edit 3 files:
+select the desired branch:
 
-- Edit `config.js` to change the name of your extension.
-- Edit `assets/index.json` and change the "name" entry with the name of your plugin. (here you can customize dependencies, if needed)
-- Edit `localConfig.json` replacing "SampleExtension", in `plugins/desktop` section, with the name of your Extension (for running local development)
-- *[only for version <= 2020.01.xx]* Edit  `package.json` changing `name` entry with a unique name for your extension. E.g. `mapstore-extension-<ext-name>.`
+`git checkout RM/nomPlugin_v.VersionNum`
 
-> **note** Edit the `name` in `package.json` is not strictly needed from version 2021.02.xx. Anyway it is a good practice to choose a unique `name` in your `package.json` for a new npm project, in general.
+Where VersionNum is the desired release number. 
 
-### Start developing
+Then install the dependencies:
 
-The main entry point of the plugin is `js/extension/plugins/Extension.jsx`. It contains a sample plugin with a sample reducer (probably you will need to rename the reducer), and a sample epic that you can see as example and replace with yours.
-You should not move or change the `js/extension/plugins/Extension.jsx` file, but you can change all the other files inside `js/extension/` directory. You edit the oher files and add new ones from this starting point.
+NodeJS >= 12.16.1 is needed
 
-Moreover you can edit:
-
-- `assets/index.json`: to customize extension dependencies.
-- `assets/translations/`: to set up your translations.
-
-### Build Extension
-
-To build the extension you should run
-
-- `npm run ext:build`
-
-This will create a zip with the name of your extension in `dist` directory.
-
-### Test Module
-
-The current project contains the plugin on its own. In a production environment the extension will be loaded dynamically from the MapStore back-end.
-You can simulate in dev-mode this condition by:
-
-Commenting `js/app.js` the lines indicated in `js/app.jsx`, that allow to load the plugin in the main app.
-
-```javascript
-// Import plugin directly in application. Comment the 3 lines below to test the extension live.
-const extensions = require('./extensions').default;
-plugins.plugins = { ...plugins.plugins, ...extensions };
-ConfigUtils.setConfigProp('translationsPath', ['./MapStore2/web/client/translations', './assets/translations']);
-// end of lines to comment
 ```
+npm i
+cd MapStore2
+npm i
+cd ../mapstore2-georchestra
+npm i
+npm fe:start
+```
+The application runs at http://localhost:8081 afterwards.
 
-- run, in 2 different console the following commands:
-  - `npm run ext:start`
-  - `npm run ext:startapp`
+II.2.2 - Settings
 
-This will run webpack dev server on port 8081 with MapStore, simulating the `extensions.json` on the default extensions path (the path is relative), and will run on port 8082 the effective modules to load.
+Proxies are managed in ./proxyConfig.js file.
 
-## Under the hood
+Locales are managed in ./assets/translations/data.lang-LANG.json
 
-MapStore extensions are based on WebPack 5 [Module Federation](https://webpack.js.org/concepts/module-federation/).
-MapStore uses `ModuleFederationPlugin` to expose the shared libs and provide the proper entry points.
+Build configuration for local use is managed in ./configs/localConfig.json
 
-An extension can `build/createExtensionWebpackConfig.js` utility to create an extension with the same shared libs.
-This utility function create the base structure to export the proper files as a federate module compatible with MapStore (passing the `name` of the extension and the exposes argument).
-This project basically uses this utility function, and is configured to:
+Configuration for production build is managed in ./assets/index.json
 
-- Run MapStore and debug the plugin, as a normal plugin
-- Run the test mode of the module, simulating the effective installation
-- Build the final zip file ready to be installed
 
-### Limitations
+## II.3 - Plugin deployment and installation
 
-For now, components retrieved from MapStore (using the import) will be a **copy of the existing ones**, so calling methods directly on some files imported from MapStore will not have any effect (e.g. register MapInfo Viewers, trying to load resolutions or from `ConfigUtils` or in general access rules using `libs/ajax`).
+Deployment and installation of custom plugins are managed in each plugin repository: geor_pluginName_Mapstore. Details of these procedures are given in the readme of these repositories.
 
-You can add to your extension **only** `css`, `js` and `png`, `jpg`, `gif` image files (other than translations folder and `index.json`). Future improvements could allow to add other assets types(icons, fonts, json ...)
+**II.3.1 - CI/CD**
 
-### Compatibility
+The project CI/CD uses the geor_MapstoreExtension CI/CD file which generates the steps of the continuous integration process. It is important to provide it with the correct project link in order to reach an instance of geor_MapstoreExtension with the correct branch (in our case RM/{CHANGE_NAME}_v.NumVersion) in order to retrieve the correct submodule from the geor_MapstoreExtension directory. The submodule in js/extension corresponds to the corresponding plugin's version.
 
-MapStore and MapStoreExtension are usually released in couples. So, generally speaking, MapStoreExtension `2022.02.00` will be compatible with `2022.02.00` ,`2022.02.01` with `2022.02.01` and so on. 
-Anyway, depending on the effective usage of the shared libraries and their updates, an extension can continue to be compatible across many different versions. 
+The steps of the process are automatic and described in the CI files. This process can be described as follows: the plugin calls geor_MapstoreExtension, which generates a build of the plugin and deploys it in a remote repository. This repository has to be set up in the .gitlab-ci.yml of geor_MapstoreExtension ("publish" section). These steps can be modified according to the architecture of your system.
 
-*note: Sometimes it can happen that we need to release some patch release for one or both the projects. In this case look at the release notes to check if there are know compatibility issues.*
+**II.3.2 - Manual Deployment**
 
-## Dev Hints
+To manually starts the build of the plugin, you need to run the following command from the root directory of the project:
 
-Here a list of hints to develop your extension:
+`npm run ext:build`
 
-- In order to keep your changes as much self contained as possible we suggest to put all your code (and assets) in `js/extension/`. (Put css in `js/extension/assets/`, etc...)
-- Use the `@mapstore` alias to refer to MapStore components. This helps your code to be compatible with future enhancements when mapstore will be published as a separated package, that can be shared
-- In order to debug the extension in `ext:start` + `ext:startapp` mode, you need to add `devtool: 'eval'` to `build/webpack.config.js`.
-- Most of the times you will develop extensions for the main map. For this reason you can find in `app.json` some code comments dedicated to configuring this project to have a plain map on startup. It has not been configured as default because this project is intended to have less differences as possible from a standard project.
-- When the `extensions.json` is configured in `app.jsx` via `extensionsRegistry` and `extensionsFolder`, in order to emulate the `extensions.json` from Webpack DevServer for testing, the paths configured in `build/module.app.webpack.config.js` and `build/webpack.config.js` needs to be modified accordingly
+A .zip file is created with the name of the extension in the 'dist' folder.
+
+## III - Installing and configuring the plugin
+
+**III.1 - Installing the plugin**
+
+This plugin is a MapstoreExtension. To install it, simply go to the mapstore map context management interface and click on the "Add an extension to Mapstore" button in the plugin configuration interface to add the plugin using its .zip file.
+
+_ If the plugin works with a back-end: link to the back-end repository and its installation procedure _
+
+**III.2 - Configuring the plugin**
+
+_ Describe here how to configure the plugin in the mapstore map context management interface _
+
+_ If the plugin works with a back-end: link to the back-end repository and its configuration procedure _
+
