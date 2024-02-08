@@ -1,6 +1,6 @@
 # geor_MapstoreExtension 
 
-:fr: [Version française](https://github.com/sigrennesmetropole/geor_pluginsRM_mapstore/geor_MapstoreExtension/docs/README_FR.MD).
+:fr: [Version française](https://github.com/sigrennesmetropole/geor_MapstoreExtension/blob/RM/RTGE_main/docs/README_FR.MD).
 
 ## I - General Information
 
@@ -10,7 +10,7 @@ This project is used by Rennes Métropole to create custom plugins for Mapstore2
 
 **II.1 - Repository organization**
 
-This repository is a fork of the geosolutions-it MapstoreExtension repository which is a Template for the development of Mapstore2 custom plugins.
+This repository is a clone of the geosolutions-it MapstoreExtension repository which is a Template for the development of Mapstore2 custom plugins.
 
 The following sub-modules have been added to this repository:
 
