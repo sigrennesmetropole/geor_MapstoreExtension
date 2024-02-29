@@ -58,7 +58,7 @@ build:
         GIT_SUBMODULE_STRATEGY: recursive
     artifacts:
         paths: 
-            - dist/SampleExtension.zip
+            - dist/PhotoObliquesExtension.zip
         expire_in: 1 day
     rules: 
         - if: $PARENT_PIPELINE_SOURCE == 'merge_request_event'
@@ -69,8 +69,8 @@ publish:
     image: node:14-bullseye
     script:
         - cd $CI_PROJECT_DIR
-        #- 'curl -k -u "$NEXUS_ACCOUNT_LOGIN:$NEXUS_ACCOUNT_PWD" -H "Content-Type: multipart/form-data" --data-binary "@dist/sampleExtension.zip" -X PUT https://nexus.si.rennes.fr/repository/sig-raw-hosted/$PIPELINE_ID/sample.zip'
-        - 'curl -u "$NEXUS_ACCOUNT_LOGIN:$NEXUS_ACCOUNT_PWD" --upload-file dist/SampleExtension.zip https://nexus.si.rennes.fr/repository/sig-raw-hosted/$PIPELINE_ID/SampleExtension.zip'
+        #- 'curl -k -u "$NEXUS_ACCOUNT_LOGIN:$NEXUS_ACCOUNT_PWD" -H "Content-Type: multipart/form-data" --data-binary "@dist/PhotoObliquesExtension.zip" -X PUT https://nexus.si.rennes.fr/repository/sig-raw-hosted/$PIPELINE_ID/PhotoObliquesExtension.zip'
+        - 'curl -u "$NEXUS_ACCOUNT_LOGIN:$NEXUS_ACCOUNT_PWD" --upload-file dist/PhotoObliquesExtension.zip https://nexus.si.rennes.fr/repository/sig-raw-hosted/$PIPELINE_ID/PhotoObliquesExtension.zip'
     rules:
         - if: $PARENT_PIPELINE_SOURCE == 'merge_request_event'
         - if: $PARENT_COMMIT_BRANCH
