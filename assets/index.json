@@ -1,12 +1,12 @@
 {
   "plugins": [
     {
-      "name": "sampleExtension",
+      "name": "PhotoObliquesExtension",
       "dependencies": [
         "Toolbar"
       ],
       "defaultConfig": {
-        "sampleExtensionHomeText": "<h1> SampleExtension title </h1><br><h2>Written in HTML. Up to you to update the code as you wish</h2>"
+        "photoObliquesExtensionHomeText": "<h1> PhotoObliquesExtension title </h1><br><h2>Written in HTML. Up to you to update the code as you wish</h2>"
       }
     }
   ]
