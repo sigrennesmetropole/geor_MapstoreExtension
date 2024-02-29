@@ -6,4 +6,4 @@
 	url = https://github.com/georchestra/mapstore2-georchestra.git
 [submodule "js/extension"]
 	path = js/extension
-	url = https://gitlab2.si.rennes.fr/sig/ed/mapstore/sampleplugin.git
+	url = https://gitlab2.si.rennes.fr/sig/ed/mapstore/geor_photoobliqueextension_mapstore.git
