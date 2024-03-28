@@ -31,6 +31,10 @@ To deploy this repository locally, the follow the steps below:
 
 `git clone --recursive https://github.com/sigrennesmetropole/geor_MapstoreExtension`
 
+Then go inside the created folder
+
+`cd geor_MapstoreExtension/`
+
 select the desired branch:
 
 `git checkout RM/nomPlugin_v.VersionNum`
