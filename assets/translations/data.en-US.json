@@ -4,9 +4,9 @@
         "extension": {
             "message": "Message!"
         },
-        "photoObliquesExtension": {
-            "title": "PhotoObliquesExtension",
-            "sample": "<Message msgId={'photoObliquesExtension.'}/>"
+        "photoObliques": {
+            "title": "PhotoObliques",
+            "sample": "<Message msgId={'photoObliques.'}/>"
         }
     }
 }

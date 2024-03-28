@@ -113,6 +113,10 @@
         "zip-webpack-plugin": "3.0.0"
     },
     "dependencies": {
+        "@turf/along": "^6.5.0",
+        "@turf/centroid": "^6.5.0",
+        "@turf/flatten": "^6.5.0",
+        "@turf/length": "^6.5.0",
         "mapstore2": "file:MapStore2",
         "postinstall": "^0.9.0",
         "react-native": "^0.73.1",
