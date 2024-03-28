@@ -31,6 +31,10 @@ Pour mettre en place ce dépôt il faut suivre la procédure suivante :
 
 `git clone --recursive https://github.com/sigrennesmetropole/geor_MapstoreExtension`
 
+Puis aller dans le dossier créé
+
+`cd geor_MapstoreExtension/`
+
 Puis il faut sélectionner la bonne branche
 
 `git checkout RM/nomPlugin_v.VersionNum`
@@ -41,11 +45,7 @@ Il faut s'assurer d'avoir une version de NodeJS supérieure à node 12.16.1, pui
 
 ```
 npm i
-cd MapStore2
-npm i
-cd ../mapstore2-georchestra
-npm i
-npm fe:start
+npm run fe:start
 ```
 L'application est accessible via http://localhost:8081
 
