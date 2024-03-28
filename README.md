@@ -47,10 +47,6 @@ NodeJS >= 12.16.1 is needed
 
 ```
 npm i
-cd MapStore2
-npm i
-cd ../mapstore2-georchestra
-npm i
 npm run fe:start
 ```
 The application runs at http://localhost:8081 afterwards.
