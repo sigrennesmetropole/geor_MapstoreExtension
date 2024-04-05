@@ -52,6 +52,6 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Artifacts
-          path: dist/PhotoObliquesExtension.zip
+          path: dist/PhotosObliques.zip
           retention-days: 5
 

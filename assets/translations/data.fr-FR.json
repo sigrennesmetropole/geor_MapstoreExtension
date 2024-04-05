@@ -6,6 +6,8 @@
         },
         "photosObliques": {
             "title": "PhotosObliques",
+            "searchTab": "Rechercher",
+            "basketTab": "Panier",
             "sample": "<Message msgId={'photoObliques.'}/>"
         }
     }

@@ -279,9 +279,9 @@
             "FeedbackMask"
         ],
         "desktop": ["Details", {
-          "name": "PhotoObliques",
+          "name": "PhotosObliques",
           "cfg": {
-            "photoObliquesHomeText": "<h1> PhotoObliques title </h1><br><h2>Written in HTML. Up to you to update the code as you wish</h2>"
+            "photosObliquesHomeText": "<h1> PhotosObliques title </h1><br><h2>Written in HTML. Up to you to update the code as you wish</h2>"
           }
         },
           {
