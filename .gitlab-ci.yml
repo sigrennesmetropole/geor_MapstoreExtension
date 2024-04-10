@@ -59,7 +59,7 @@ build:
         GIT_SUBMODULE_STRATEGY: recursive
     artifacts:
         paths: 
-            - dist/PhotoObliques.zip
+            - dist/PhotosObliques.zip
         expire_in: 1 day
     rules: 
         - if: $PARENT_PIPELINE_SOURCE == 'merge_request_event'
