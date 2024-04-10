@@ -52,6 +52,7 @@ build:
         - cd js/extension && git fetch && git checkout -b $CI_PIPELINE_ID $PARENT_COMMIT_SHA
         - cd $CI_PROJECT_DIR
         #- git submodule update MapStore2
+        - npm i @turf/turf
         - npm ci
         - npm run ext:build
     variables:
