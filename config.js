@@ -1,3 +1,3 @@
 module.exports = {
-    name: "PhotosObliques"
+    name: "PhotosObliquesExtension"
 };
