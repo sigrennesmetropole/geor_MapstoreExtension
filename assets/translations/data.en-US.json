@@ -6,7 +6,7 @@
         },
         "photosObliques": {
             "title": "PhotosObliques",
-            "sample": "<Message msgId={'photoObliques.'}/>"
+            "sample": "<Message msgId={'sampleExtension.'}/>"
         }
     }
 }

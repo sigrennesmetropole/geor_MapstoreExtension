@@ -8,7 +8,7 @@
             "title": "PhotosObliques",
             "searchTab": "Rechercher",
             "basketTab": "Panier",
-            "sample": "<Message msgId={'photoObliques.'}/>"
+            "sample": "<Message msgId={'sampleExtension.'}/>"
         }
     }
 }
