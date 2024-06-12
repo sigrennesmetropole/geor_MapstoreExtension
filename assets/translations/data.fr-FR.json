@@ -8,6 +8,19 @@
             "title": "PhotosObliques",
             "welcome": "Rechercher",
             "selection": "Panier",
+            "yearTaken": "Année de prise de vue",
+            "date": "Date",
+            "provider": "Prestataire",
+            "owner": "Propriétaire",
+            "weight": "Taille",
+            "addBasket": "Panier",
+            "cancelSearch": "Annuler",
+            "ValidateSearch": "Chercher",
+            "picturesFound": "Photos trouvées",
+            "updateSearch": "Modifier la recherche",
+            "pictureSelected": "Images sélectionnées",
+            "removeBasket": "supprimer éléments sélectionnés",
+            "downloadBasket": "Téléchargement",
             "sample": "<Message msgId={'sampleExtension.'}/>"
         }
     }
