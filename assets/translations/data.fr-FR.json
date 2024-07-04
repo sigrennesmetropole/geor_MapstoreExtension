@@ -21,6 +21,7 @@
             "pictureSelected": "Images sélectionnées",
             "removeBasket": "supprimer éléments sélectionnés",
             "downloadBasket": "Téléchargement",
+            "windRoseLabel": "Angle de prise de vue:",
             "sample": "<Message msgId={'sampleExtension.'}/>"
         }
     }

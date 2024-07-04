@@ -52,5 +52,13 @@ module.exports = {
     '/docs': {
         target: "http://localhost:8081",
         pathRewrite: {'/docs': '/mapstore/docs'}
+    },
+    '/photosobliques': {
+        target: "https://portail-test.sig.rennesmetropole.fr",
+        secure: false,
+        headers: {
+            host: "portail-test.sig.rennesmetropole.fr"
+        },
+        changeOrigin: true
     }
 };
