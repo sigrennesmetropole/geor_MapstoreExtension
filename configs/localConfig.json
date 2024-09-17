@@ -281,7 +281,11 @@
         "desktop": ["Details", {
           "name": "PhotosObliques",
           "cfg": {
-            "photosObliquesHomeText": "<h1> PhotosObliques title </h1><br><h2>Written in HTML. Up to you to update the code as you wish</h2>"
+            "photosObliquesHomeText": "<h1> PhotosObliques title </h1><br><h2>Written in HTML. Up to you to update the code as you wish</h2>",
+            "pictureAmount": 5,
+            "maxMoAmount": 50,
+            "downloadInformationMessage": "Vous devez impérativement faire apparaître les mentions légales présentes dans le fichier texte joint à chaque photo téléchargée, lors de son utilisation",
+            "backendURLAccess": "https://portail-test.sig.rennesmetropole.fr"
           }
         },
           {

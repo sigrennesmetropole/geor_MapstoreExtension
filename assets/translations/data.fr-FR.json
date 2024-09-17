@@ -23,6 +23,28 @@
             "downloadBasket": "Téléchargement",
             "windRoseLabel": "Angle de prise de vue:",
             "picturesAvailable": "Photos disponibles",
+            "deletionModal": "Etes vous certain de vouloir supprimer tous les éléments dans le panier ?",
+            "downloadModal": "Téléchargement des photos",
+            "zoomTooltip": "L'emprise dépasse de l'écran",
+            "spinnerMsg": "Téléchargement en cours",
+            "downloadIUnderstand": "Vous devez impérativement faire apparaître les mentions légales présentes dans le fichier texte joint à chaque photo téléchargée, lors de son utilisation",
+            "understood": "J'ai compris",
+            "ok": "OK",
+            "cancel": "Annuler",
+            "prefixLabel": "Préfixe des fichiers photos",
+            "fileName": "Nom du fichier .zip",
+            "pictureAmount": "images maximum",
+            "maxCartSize": "maximum",
+            "dropPopUpCustom": {
+                "title": "Erreur",
+                "message": "Erreur de fonctionnement, merci de contacter les administrateurs"
+            },
+            "dropPopUp400": {
+                "title": "Erreur 400"
+            },
+            "dropPopUp500": {
+                "title": "Erreur 500"
+            },
             "sample": "<Message msgId={'sampleExtension.'}/>"
         }
     }
