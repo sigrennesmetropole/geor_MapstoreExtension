@@ -26,7 +26,7 @@
             "deletionModal": "Etes vous certain de vouloir supprimer tous les éléments dans le panier ?",
             "downloadModal": "Téléchargement des photos",
             "zoomTooltip": "L'emprise dépasse de l'écran",
-            "spinnerMsg": "Téléchargement en cours",
+            "spinnerDownloadMsg": "Téléchargement en cours",
             "downloadIUnderstand": "Vous devez impérativement faire apparaître les mentions légales présentes dans le fichier texte joint à chaque photo téléchargée, lors de son utilisation",
             "understood": "J'ai compris",
             "ok": "OK",
@@ -45,6 +45,12 @@
             "dropPopUp500": {
                 "title": "Erreur 500"
             },
+            "downloadButton": "Télécharger",
+            "removeEverythingFromBasket": "Suppression",
+            "filterTitle": "Filtres de recherche",
+            "filterYears": "Années",
+            "defaultStartDateOption": "Année de Début",
+            "defaultEndDateOption": "Année de fin",
             "sample": "<Message msgId={'sampleExtension.'}/>"
         }
     }
