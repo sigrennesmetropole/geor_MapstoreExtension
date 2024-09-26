@@ -1,5 +1,5 @@
 {
-    "name": "PhotosObliques",
+    "name": "photosObliques",
     "version": "1.0.0",
     "description": "Template project to create MapStore extensions",
     "main": "index.js",
