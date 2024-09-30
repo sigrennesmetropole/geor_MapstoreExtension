@@ -10,7 +10,7 @@
         "pictureAmount": 5,
         "maxMoAmount": 50,
         "downloadInformationMessage": "Vous devez impérativement faire apparaître les mentions légales présentes dans le fichier texte joint à chaque photo téléchargée, lors de son utilisation",
-        "backendURLAccess": "https://portail-test.sig.rennesmetropole.fr"
+        "backendURLAccess": "/photosobliques"
       }
     }
   ]
