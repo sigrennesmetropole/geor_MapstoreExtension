@@ -1,7 +1,7 @@
 {
   "plugins": [
     {
-      "name": "photosObliques",
+      "name": "PhotosObliques",
       "dependencies": [
         "SidebarMenu"
       ],
