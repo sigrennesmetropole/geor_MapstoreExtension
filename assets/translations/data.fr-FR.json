@@ -13,7 +13,7 @@
             "provider": "Prestataire",
             "owner": "Propriétaire",
             "weight": "Taille",
-            "addBasket": "Panier",
+            "addBasket": "Ajouter au panier",
             "cancelSearch": "Annuler",
             "ValidateSearch": "Chercher",
             "picturesFound": "Photos trouvées",
@@ -21,7 +21,7 @@
             "pictureSelected": "Images sélectionnées",
             "removeBasket": "supprimer éléments sélectionnés",
             "downloadBasket": "Téléchargement",
-            "windRoseLabel": "Angle de prise de vue:",
+            "windRoseLabel": "Angle de prise de vue",
             "picturesAvailable": "Photos disponibles",
             "deletionModal": "Etes vous certain de vouloir supprimer tous les éléments dans le panier ?",
             "downloadModal": "Téléchargement des photos",
@@ -56,6 +56,7 @@
             "filterYears": "Années",
             "defaultStartDateOption": "Année de Début",
             "defaultEndDateOption": "Année de fin",
+            "helpButton": "?",
             "sample": "<Message msgId={'sampleExtension.'}/>"
         }
     }
