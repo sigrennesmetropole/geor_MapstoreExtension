@@ -28,7 +28,7 @@
             "zoomTooltip": "L'emprise dépasse de l'écran",
             "spinnerDownloadMsg": "Téléchargement en cours",
             "spinnerResultLoadingMessage": "Chargement des résultats en cours",
-            "downloadIUnderstand": "Vous devez impérativement faire apparaître les mentions légales présentes dans le fichier texte joint à chaque photo téléchargée, lors de son utilisation",
+            "downloadIUnderstand": "Pour tout usage des photos téléchargées, vous devez impérativement faire apparaitre les mentions légales présentes dans le fichier texte joint à chaque photo.",
             "understood": "J'ai compris",
             "ok": "OK",
             "cancel": "Annuler",
@@ -40,11 +40,31 @@
                 "title": "Erreur",
                 "message": "Erreur de fonctionnement, merci de contacter les administrateurs"
             },
+            "dropPopUp200": {
+                "title": "Téléchargement effectué",
+                "message": "Le téléchargement s'est déroulé avec succès."
+            },
             "dropPopUp400": {
                 "title": "Erreur 400"
             },
             "dropPopUp500": {
                 "title": "Erreur 500"
+            },
+            "dropPopUpTooManyPictures": {
+                "title": "Trop d'images dans le panier",
+                "message": "Le nombre d'images dans la panier a excédé la limite maximale autorisée"
+            },
+            "dropPopUpTooHeavy": {
+                "title": "Panier trop lourd",
+                "message": "Le poid des images a excédé la limite maximale autorisée"
+            },
+            "dropPopUpAddBasket": {
+                "title": "Ajout panier",
+                "message": "Vous avez ajouté votre image au panier avec succès"
+            },
+            "dropPopUpErrorFilters": {
+                "title": "Erreur Filtres",
+                "message": "La sélection à été mal effectuée et le tri est impossible..."
             },
             "downloadOneButton": "Télécharger l'élément",
             "downloadMultipleButton": "Télécharger les éléments",
