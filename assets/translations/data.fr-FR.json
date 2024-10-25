@@ -34,8 +34,8 @@
             "cancel": "Annuler",
             "prefixLabel": "Préfixe des fichiers photos",
             "fileName": "Nom du fichier .zip",
-            "pictureAmount": "images maximum",
-            "maxCartSize": "maximum",
+            "pictureAmount": "images",
+            "maxLimits": "Limites maximales : ",
             "dropPopUpCustom": {
                 "title": "Erreur",
                 "message": "Erreur de fonctionnement, merci de contacter les administrateurs"
@@ -77,6 +77,7 @@
             "defaultStartDateOption": "Année de Début",
             "defaultEndDateOption": "Année de fin",
             "helpButton": "?",
+            "noResultsFound": "Aucun résultat n'a été trouvé",
             "sample": "<Message msgId={'sampleExtension.'}/>"
         }
     }
