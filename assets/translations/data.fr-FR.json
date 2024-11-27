@@ -13,18 +13,22 @@
             "provider": "Prestataire",
             "owner": "Propriétaire",
             "weight": "Taille",
+            "relevance": "Pertinence",
+            "orderBy" : "Trier par",
             "addBasket": "Ajouter au panier",
             "cancelSearch": "Annuler",
             "ValidateSearch": "Chercher",
             "picturesFound": "Photos trouvées",
+            "picturesLoaded": "Photos affichées",
             "updateSearch": "Modifier la recherche",
-            "pictureSelected": "Images sélectionnées",
+            "pictureSelected": "Photos sélectionnées",
             "removeBasket": "supprimer éléments sélectionnés",
             "downloadBasket": "Téléchargement",
             "windRoseLabel": "Angle de prise de vue",
             "picturesAvailable": "Photos disponibles",
             "deletionModal": "Etes vous certain de vouloir supprimer tous les éléments dans le panier ?",
             "downloadModal": "Téléchargement des photos",
+            "numberOfFilesDownloaded": "photo(s) à télécharger",
             "zoomTooltip": "L'emprise dépasse de l'écran",
             "spinnerDownloadMsg": "Téléchargement en cours",
             "spinnerResultLoadingMessage": "Chargement des résultats en cours",
@@ -51,22 +55,26 @@
                 "title": "Erreur 500"
             },
             "dropPopUpTooManyPictures": {
-                "title": "Trop d'images dans le panier",
-                "message": "Le nombre d'images dans la panier a excédé la limite maximale autorisée"
+                "title": "Trop de photos dans le panier",
+                "message": "Le nombre de photos dans la panier a excédé la limite maximale autorisée"
             },
             "dropPopUpTooHeavy": {
                 "title": "Panier trop lourd",
-                "message": "Le poid des images a excédé la limite maximale autorisée"
+                "message": "Le poid des photos a excédé la limite maximale autorisée"
             },
             "dropPopUpAddBasket": {
                 "title": "Ajout panier",
-                "message": "Vous avez ajouté votre image au panier avec succès"
+                "message": "Vous avez ajouté votre photo au panier avec succès"
+            },
+            "alreadyInBasket": {
+                "title": "Photo déjà ajoutée",
+                "message": "Cette photo était déjà présente dans le panier"
             },
             "dropPopUpErrorFilters": {
                 "title": "Erreur Filtres",
                 "message": "La sélection à été mal effectuée et le tri est impossible..."
             },
-            "downloadOneButton": "Télécharger l'élément",
+            "downloadOneButton": "Télécharger l'élément sélectionné",
             "downloadMultipleButton": "Télécharger les éléments",
             "downloadAllButton": "Télécharger le panier",
             "removeSelectedElement": "Supprimer l'élément sélectionné",
