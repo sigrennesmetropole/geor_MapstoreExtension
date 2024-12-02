@@ -6,8 +6,8 @@
         },
         "photosObliques": {
             "title": "Photos Obliques",
-            "welcome": "Rechercher",
-            "selection": "Panier",
+            "search": "Rechercher",
+            "cart": "Panier",
             "yearTaken": "Année prise de vue",
             "date": "Date",
             "provider": "Prestataire",
@@ -22,11 +22,9 @@
             "picturesLoaded": "Photos affichées",
             "updateSearch": "Modifier la recherche",
             "pictureSelected": "Photos sélectionnées",
-            "removeBasket": "supprimer éléments sélectionnés",
-            "downloadBasket": "Téléchargement",
             "windRoseLabel": "Angle de prise de vue",
             "picturesAvailable": "Photos disponibles",
-            "deletionModal": "Etes vous certain de vouloir supprimer tous les éléments dans le panier ?",
+            "deletionModal": "Etes vous certain de vouloir supprimer tous les éléments du panier ?",
             "downloadModal": "Téléchargement des photos",
             "numberOfFilesDownloaded": "photo(s) à télécharger",
             "zoomTooltip": "L'emprise dépasse de l'écran",
@@ -60,7 +58,7 @@
             },
             "dropPopUpTooHeavy": {
                 "title": "Panier trop lourd",
-                "message": "Le poid des photos a excédé la limite maximale autorisée"
+                "message": "Le poids des photos a excédé la limite maximale autorisée"
             },
             "dropPopUpAddBasket": {
                 "title": "Ajout panier",
@@ -69,10 +67,6 @@
             "alreadyInBasket": {
                 "title": "Photo déjà ajoutée",
                 "message": "Cette photo était déjà présente dans le panier"
-            },
-            "dropPopUpErrorFilters": {
-                "title": "Erreur Filtres",
-                "message": "La sélection à été mal effectuée et le tri est impossible..."
             },
             "downloadOneButton": "Télécharger l'élément sélectionné",
             "downloadMultipleButton": "Télécharger les éléments",
@@ -85,8 +79,7 @@
             "defaultStartDateOption": "Année de Début",
             "defaultEndDateOption": "Année de fin",
             "helpButton": "?",
-            "noResultsFound": "Aucun résultat n'a été trouvé",
-            "sample": "<Message msgId={'sampleExtension.'}/>"
+            "noResultsFound": "Aucun résultat n'a été trouvé"
         }
     }
 }
