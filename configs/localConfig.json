@@ -281,7 +281,7 @@
         "desktop": ["Details", {
           "name": "RTGEExtension",
           "cfg": {
-            "rtgeBackendURLPrefix": "",
+            "rtgeBackendURLPrefix": "/rtge",
             "rtgeGridLayerId": "ref_topo:rtge_carroyage",
             "rtgeGridLayerName": "ref_topo:rtge_carroyage",
             "rtgeGridLayerTitle": "RTGE : Carroyage au 1/200",

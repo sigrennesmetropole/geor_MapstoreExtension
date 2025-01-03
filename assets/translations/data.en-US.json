@@ -12,6 +12,14 @@
             "service": "Service",
             "courriel": "E-Mail",
             "telephone": "Phone",
+            "finalUse" : "Final use",
+            "finalUseSelectValue": "Select final use",
+            "internalUsage" : "Internal usage",
+            "externalUsage" : "External usage", 
+            "finalUserInfoLabel": "End user informations :",           
+            "finalUser" : "Name",
+            "finalUserEMail" : "E-Mail",
+            "finalUserAddress" : "Postal address",
             "motivation": "Motivation - Project",
             "dataType": "Data type",
             "dataSurf": "Aboveground Data",
@@ -41,9 +49,9 @@
                 "underground": "Nb object ugd",
                 "tiles": "tiles"
             },
-            "send": "Send mail",
+            "send": "Send",
             "sendTab": {
-                "button": "Send mail"
+                "button": "Send"
             },
             "tooltips": {
                 "tooltipSelectPoint" : "Simple clic selection",

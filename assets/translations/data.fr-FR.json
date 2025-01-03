@@ -12,6 +12,14 @@
             "service": "Service",
             "courriel": "Courriel",
             "telephone": "Téléphone",
+            "finalUse" : "Utilisation finale",
+            "finalUseSelectValue": "Choisir le type d'utilisateur final",
+            "internalUsage" : "Destination interne",
+            "externalUsage" : "Destination externe",  
+            "finalUserInfoLabel": "Informations sur l'utilisateur final :",
+            "finalUser" : "Nom",
+            "finalUserEMail" : "Courriel",
+            "finalUserAddress" : "Adresse postale",
             "motivation": "Motivation - Projet",
             "dataType": "Type de données",
             "dataSurf": "Données surface",
@@ -39,7 +47,7 @@
             },
             "send": "Envoi",
             "sendTab": {
-                "button": "Envoyer mail"
+                "button": "Envoyer la demande"
             },
             "tooltips": {
                 "tooltipSelectPoint" : "Sélectionner par simple clic",
