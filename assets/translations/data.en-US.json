@@ -17,7 +17,7 @@
             "orderBy" : "Sort by",
             "addBasket": "Add to basket",
             "cancelSearch": "Cancel",
-            "ValidateSearch": "Search",
+            "validateSearch": "Search",
             "picturesFound": "Pictures found",
             "picturesLoaded": "Pictures loaded",
             "updateSearch": "Change search",
@@ -35,7 +35,9 @@
             "ok": "OK",
             "cancel": "Cancel",
             "prefixLabel": "Prefix for photo files",
+            "prefixPlaceHolder":"no prefix",
             "fileName": "Name of .zip file",
+            "fileNamePlaceHolder":"today's timestamp",
             "pictureAmount": "pictures",
             "maxLimits": "Maximum limits: ",
             "dropPopUpCustom": {
