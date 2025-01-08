@@ -1,6 +1,6 @@
 # geor_MapstoreExtension 
 
-:fr: [Version française](https://github.com/sigrennesmetropole/geor_MapstoreExtension/blob/RM/RTGE_main/docs/README_FR.MD).
+:fr: [Version française](docs/README_FR.MD).
 
 ## I - General Information
 

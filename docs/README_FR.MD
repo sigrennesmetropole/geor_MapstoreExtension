@@ -1,6 +1,6 @@
 # MapstoreExtension pour geOrchestra RM
 
-:gb: [English Version](https://github.com/sigrennesmetropole/geor_MapstoreExtension/tree/RM/RTGE_main).
+:gb: [English Version](../README.md).
 
 ## I - Généralités
 
