@@ -25,7 +25,7 @@
             "dataSurf": "Aboveground Data",
             "dataUnderSurf": "Underground Data",
             "schematicalNetwork": "Include Schematical Networks",
-            "schematicalNetworkWarning": "data for which the drawing is indicative",
+            "schematicalNetworkWarning": "Data for which the drawing is indicative",
             "sendBtnDisabled" : "Please make a selection so that you can submit your request",
             "alertMaxFeatures": {
                 "title": "Warning",
@@ -59,6 +59,7 @@
                 "tooltipTrashSquare" : "Remove selected tiles",
                 "tooltipTrash" : "Remove all tiles" 
             },
+            "spinnerMsg": "Mail is being sent...",
             "sample": "<Message msgId={'RTGE.'}/>"
         }
     }

@@ -12,6 +12,14 @@
             "service": "Servizio",
             "courriel": "E-mail",
             "telephone": "Telefono",
+            "finalUse" : "Fine dell'uso",
+            "finalUseSelectValue": "Scegli il tipo di utilizzo finale",
+            "internalUsage" : "Destinazione interna",
+            "externalUsage" : "Destinazione esterna",  
+            "finalUserInfoLabel": "Destinatario :",
+            "finalUser" : "Nome",
+            "finalUserEMail" : "e-mail",
+            "finalUserAddress" : "Indirizzo postale",
             "motivation": "Motivazione - Progetto",
             "dataType": "Tipo di dati",
             "dataSurf": "Dati di superficie",
@@ -47,6 +55,7 @@
                 "tooltipTrashSquare" : "Rimuovi la(e) lastra(e) selezionata(e)",
                 "tooltipTrash" : "Rimuovi tutte le tessere" 
             },
+            "spinnerMsg": "Invio dell'e-mail...",
             "sample": "<Message msgId={'RTGE.'}/>"
         }
     }
