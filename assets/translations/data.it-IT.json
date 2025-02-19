@@ -24,6 +24,7 @@
             "dataType": "Tipo di dati",
             "dataSurf": "Dati di superficie",
             "dataUnderSurf": "Dati del seminterrato",
+            "dataUnderSurfWarning" : "Assicurati di specificare con precisione le tue esigenze nell'area 'Motivazioni - Progetto'.",
             "schematicalNetwork": "Includere Rete schematica",
             "schematicalNetworkWarning": "Dati la cui trama è indicativa",
             "sendBtnDisabled" : "Effettua una selezione per poter inviare la tua richiesta",
