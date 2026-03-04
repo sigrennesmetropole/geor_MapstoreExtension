@@ -56,6 +56,12 @@
                 "tooltipTrashSquare" : "Retirer dalle(s) sélectionnée(s)" ,
                 "tooltipTrash" : "Retirer toutes les dalles" 
             },
+            "modal": {
+                "deleteSelected" : "Etes vous certain de vouloir supprimer les éléments sélectionnés ?",
+                "deleteAll" : "Etes vous certain de vouloir supprimer tous les éléments ?"
+            },
+            "ok" : "OK",
+            "cancel" : "Annuler",
             "spinnerMsg": "Envoi du mail...",
             "sample": "<Message msgId={'RTGE.'}/>"
         }

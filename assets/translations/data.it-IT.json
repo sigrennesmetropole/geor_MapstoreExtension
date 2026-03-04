@@ -56,6 +56,12 @@
                 "tooltipTrashSquare" : "Rimuovi la(e) lastra(e) selezionata(e)",
                 "tooltipTrash" : "Rimuovi tutte le tessere" 
             },
+            "modal": {
+                "deleteSelected" : "Sei sicuro di voler eliminare gli elementi selezionati?",
+                "deleteAll" : "Sei sicuro di voler eliminare tutti gli elementi?"
+            },
+            "ok" : "OK",
+            "cancel" : "Annullare",
             "spinnerMsg": "Invio dell'e-mail...",
             "sample": "<Message msgId={'RTGE.'}/>"
         }

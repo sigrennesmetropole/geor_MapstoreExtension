@@ -56,6 +56,12 @@
                 "tooltipTrashSquare" : "Tennañ al lec'h diuzet",
                 "tooltipTrash" : "Dilemel an holl vaeziennoù" 
             },
+            "modal": {
+                "deleteSelected" : "Ha sur oc'h e fell deoc'h diverkañ an elfennoù dibabet ?",
+                "deleteAll" : "Ha sur oc'h e fell deoc'h diverkañ an holl elfennoù ?"
+            },
+            "ok" : "Ya",
+            "cancel" : "Hiraezh",
             "spinnerMsg": "kas posteloù o vont war-raok...",
             "sample": "<Message msgId={'RTGE.'}/>"
         }

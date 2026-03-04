@@ -60,6 +60,12 @@
                 "tooltipTrashSquare" : "Remove selected tiles",
                 "tooltipTrash" : "Remove all tiles" 
             },
+            "modal": {
+                "deleteSelected" : "Are you sure you want to delete the selected items?",
+                "deleteAll" : "Are you sure you want to delete all selected items?"
+            },
+            "ok" : "OK",
+            "cancel" : "Cancel",
             "spinnerMsg": "Mail is being sent...",
             "sample": "<Message msgId={'RTGE.'}/>"
         }
