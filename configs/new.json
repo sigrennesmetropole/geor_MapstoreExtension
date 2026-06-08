@@ -1,24 +1,19 @@
 {
-	"map": {
-		"projection": "EPSG:3857",
+  "map": {
+    "projection": "EPSG:3857",
     "units": "m",
-    "center": {"x": -185849.00, "y": 6125632.00, "crs": "EPSG:3857"},
+    "center": { "x": -185849.0, "y": 6125632.0, "crs": "EPSG:3857" },
     "zoom": 12,
-    "maxExtent": [
-      -20037508.34,
-      -20037508.34,
-      20037508.34,
-      20037508.34
-    ],
-		"layers": [
-			{
-				"type": "osm",
-				"title": "Open Street Map",
-				"name": "mapnik",
+    "maxExtent": [-20037508.34, -20037508.34, 20037508.34, 20037508.34],
+    "layers": [
+      {
+        "type": "osm",
+        "title": "Open Street Map",
+        "name": "mapnik",
         "source": "osm",
-				"group": "background",
+        "group": "background",
         "visibility": true
-			},
+      },
       {
         "type": "tileprovider",
         "title": "NASAGIBS Night 2012",
@@ -45,7 +40,12 @@
         "title": "Sentinel 2 Cloudless",
         "type": "wms",
         "url": [
-          "https://1maps.geo-solutions.it/geoserver/wms", "https://2maps.geo-solutions.it/geoserver/wms", "https://3maps.geo-solutions.it/geoserver/wms", "https://4maps.geo-solutions.it/geoserver/wms", "https://5maps.geo-solutions.it/geoserver/wms", "https://6maps.geo-solutions.it/geoserver/wms"
+          "https://1maps.geo-solutions.it/geoserver/wms",
+          "https://2maps.geo-solutions.it/geoserver/wms",
+          "https://3maps.geo-solutions.it/geoserver/wms",
+          "https://4maps.geo-solutions.it/geoserver/wms",
+          "https://5maps.geo-solutions.it/geoserver/wms",
+          "https://6maps.geo-solutions.it/geoserver/wms"
         ],
         "source": "s2cloudless",
         "visibility": false,
@@ -59,7 +59,8 @@
         "type": "empty",
         "visibility": false,
         "args": [
-          "Empty Background", {
+          "Empty Background",
+          {
             "visibility": false
           }
         ]
@@ -67,83 +68,83 @@
       {
         "id": "phot_obliq:photooblique_emprise",
         "format": "image/png8",
-				"search": {
-					"url": "/geoserver/wfs",
-					"type": "wfs"
-				},
-				"name": "phot_obliq:photooblique_emprise",
-				"description": "La Ville de Rennes réalise annuellement depuis 1993 une campagne de photographies aériennes obliques sur son territoire. Depuis maintenant quelques années, cette campagne a été étendue sur l’ensemble du territoire de Rennes Métropole.\nLa Ville de Rennes et Rennes Métropole peuvent aussi être amenées à effectuer des campagnes ponctuelles pour des évènements particuliers : phénomènes climatiques, manifestations, etc.\n\nCes photos sont réalisées à partir d'un vecteur aérien en mouvement (avion, ULM) ou captif (ballon) depuis 2005.\n\nLes photos, disponibles à différents formats, ne sont pas géoréférencées.\n\nEn revanche, afin de pouvoir connaître la portion de territoire terrestre couverte par une photographie, chaque photo est décrite sous la forme d'une emprise polygonale de la forme d'un trapèze.\nLa présente couche décrite ici est constituée de ces polygones.\n\nLe stock de photos disponibles, et donc d'emprises, couvre une période allant de 1924 à l'année en cours. Soit un stock d'environ 8 000 photos.\nDes campagnes particulière ont été réalisée en 2008, 2011, 2013 et 2015 afin de disposer de photos obliques haute résolution pour réaliser des textures 3D. Ceci concerne environ 66 500 photos.",
-				"layerFilter": {
-					"searchUrl": null,
-					"featureTypeConfigUrl": null,
-					"showGeneratedFilter": false,
-					"attributePanelExpanded": true,
-					"spatialPanelExpanded": true,
-					"crossLayerExpanded": true,
-					"showDetailsPanel": false,
-					"groupLevels": 5,
-					"useMapProjection": false,
-					"toolbarEnabled": true,
-					"groupFields": [
-						{
-							"id": 1,
-							"logic": "OR",
-							"index": 0
-						}
-					],
-					"maxFeaturesWPS": 5,
-					"filterFields": [
-						{
-							"rowId": 1732891641673,
-							"groupId": 1,
-							"attribute": "annee",
-							"operator": "=",
-							"value": 2023,
-							"type": "number",
-							"fieldOptions": {
-								"valuesCount": 0,
-								"currentPage": 1
-							},
-							"exception": null
-						}
-					],
-					"spatialField": {
-						"method": null,
-						"operation": "INTERSECTS",
-						"geometry": null,
-						"attribute": "shape"
-					},
-					"simpleFilterFields": [],
-					"filters": [],
-					"crossLayerFilter": null,
-					"autocompleteEnabled": true
-				},
-				"title": "Emprises des photographies aériennes obliques et perspectives",
-				"type": "wms",
-				"url": "/geoserver/ows",
-				"bbox": {
-					"crs": "EPSG:4326",
-					"bounds": {
-						"minx": -2.03371,
-						"miny": 47.88625,
-						"maxx": -1.39069,
-						"maxy": 48.29758
-					}
-				},
-				"visibility": true,
-				"singleTile": false,
-				"allowedSRS": {},
-				"dimensions": [],
-				"hideLoading": false,
-				"handleClickOnLayer": false,
-				"featureInfo": null,
-				"catalogURL": "",
-				"useForElevation": false,
-				"hidden": false,
-				"tileSize": 512,
-				"expanded": false,
-				"params": {}
-			}
-		]
-	}
+        "search": {
+          "url": "/geoserver/wfs",
+          "type": "wfs"
+        },
+        "name": "phot_obliq:photooblique_emprise",
+        "description": "La Ville de Rennes réalise annuellement depuis 1993 une campagne de photographies aériennes obliques sur son territoire. Depuis maintenant quelques années, cette campagne a été étendue sur l’ensemble du territoire de Rennes Métropole.\nLa Ville de Rennes et Rennes Métropole peuvent aussi être amenées à effectuer des campagnes ponctuelles pour des évènements particuliers : phénomènes climatiques, manifestations, etc.\n\nCes photos sont réalisées à partir d'un vecteur aérien en mouvement (avion, ULM) ou captif (ballon) depuis 2005.\n\nLes photos, disponibles à différents formats, ne sont pas géoréférencées.\n\nEn revanche, afin de pouvoir connaître la portion de territoire terrestre couverte par une photographie, chaque photo est décrite sous la forme d'une emprise polygonale de la forme d'un trapèze.\nLa présente couche décrite ici est constituée de ces polygones.\n\nLe stock de photos disponibles, et donc d'emprises, couvre une période allant de 1924 à l'année en cours. Soit un stock d'environ 8 000 photos.\nDes campagnes particulière ont été réalisée en 2008, 2011, 2013 et 2015 afin de disposer de photos obliques haute résolution pour réaliser des textures 3D. Ceci concerne environ 66 500 photos.",
+        "layerFilter": {
+          "searchUrl": null,
+          "featureTypeConfigUrl": null,
+          "showGeneratedFilter": false,
+          "attributePanelExpanded": true,
+          "spatialPanelExpanded": true,
+          "crossLayerExpanded": true,
+          "showDetailsPanel": false,
+          "groupLevels": 5,
+          "useMapProjection": false,
+          "toolbarEnabled": true,
+          "groupFields": [
+            {
+              "id": 1,
+              "logic": "OR",
+              "index": 0
+            }
+          ],
+          "maxFeaturesWPS": 5,
+          "filterFields": [
+            {
+              "rowId": 1732891641673,
+              "groupId": 1,
+              "attribute": "annee",
+              "operator": "=",
+              "value": 2023,
+              "type": "number",
+              "fieldOptions": {
+                "valuesCount": 0,
+                "currentPage": 1
+              },
+              "exception": null
+            }
+          ],
+          "spatialField": {
+            "method": null,
+            "operation": "INTERSECTS",
+            "geometry": null,
+            "attribute": "shape"
+          },
+          "simpleFilterFields": [],
+          "filters": [],
+          "crossLayerFilter": null,
+          "autocompleteEnabled": true
+        },
+        "title": "Emprises des photographies aériennes obliques et perspectives",
+        "type": "wms",
+        "url": "/geoserver/ows",
+        "bbox": {
+          "crs": "EPSG:4326",
+          "bounds": {
+            "minx": -2.03371,
+            "miny": 47.88625,
+            "maxx": -1.39069,
+            "maxy": 48.29758
+          }
+        },
+        "visibility": true,
+        "singleTile": false,
+        "allowedSRS": {},
+        "dimensions": [],
+        "hideLoading": false,
+        "handleClickOnLayer": false,
+        "featureInfo": null,
+        "catalogURL": "",
+        "useForElevation": false,
+        "hidden": false,
+        "tileSize": 512,
+        "expanded": false,
+        "params": {}
+      }
+    ]
+  }
 }
