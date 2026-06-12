@@ -1,87 +1,87 @@
-    {
-    "locale": "en-US",
-    "messages": {
-        "extension": {
-            "message": "Message!"
-        },
-        "photosObliques": {
-            "title": "Oblique Aerial Photos",
-            "search": "Search",
-            "cart": "Basket",
-            "yearTaken": "Year of acquisition",
-            "date": "Date",
-            "provider": "Provider",
-            "owner": "Owner",
-            "weight": "Size",
-            "relevance": "Relevance",
-            "orderBy" : "Sort by",
-            "addBasket": "Add to basket",
-            "cancelSearch": "Cancel",
-            "validateSearch": "Search",
-            "picturesFound": "Pictures found",
-            "picturesLoaded": "Pictures loaded",
-            "updateSearch": "Change search",
-            "pictureSelected": "Pictures selected",
-            "windRoseLabel": "Shooting angle",
-            "picturesAvailable": "Pictures available",
-            "deletionModal": "Are you sure you want to delete all the pictures in the basket?",
-            "downloadModal": "Download pictures",
-            "numberOfFilesDownloaded": "pictures(s) to download",
-            "zoomTooltip": "Picture exceeds screen size",
-            "spinnerDownloadMsg": "Download in progress",
-            "spinnerResultLoadingMessage": "Loading results in progress",
-            "downloadIUnderstand": "Any use of downloaded photos must display the legal notices contained in the text file attached to each photo.",
-            "understood": "I understand",
-            "ok": "OK",
-            "cancel": "Cancel",
-            "prefixLabel": "Prefix for photo files",
-            "prefixPlaceHolder":"no prefix",
-            "fileName": "Name of .zip file",
-            "fileNamePlaceHolder":"today's timestamp",
-            "pictureAmount": "pictures",
-            "maxLimits": "Maximum limits: ",
-            "dropPopUpCustom": {
-                "title": "Error",
-                "message": "Operating error, please contact an administrator"
-            },
-            "dropPopUp200": {
-                "title": "Download complete",
-                "message": "The download was completed successfully."
-            },
-            "dropPopUp400": {
-                "title": "Error 400"
-            },
-            "dropPopUp500": {
-                "title": "Error 500"
-            },
-            "dropPopUpTooManyPictures": {
-                "title": "Too many pictures in the basket",
-                "message": "The number of photos in the basket exceeds the allowed limit"
-            },
-            "dropPopUpTooHeavy": {
-                "title": "Basket too big",
-                "message": "The weight of the photos in the basket exceeds the allowed limit"
-            },
-            "dropPopUpAddBasket": {
-                "title": "Add to basket",
-                "message": "You have successfully added the photo to the basket"
-            },
-            "alreadyInBasket": {
-                "title": "Already in basket",
-                "message": "This photo was already in the basket"
-            },
-            "downloadOneButton": "Download the selected picture",
-            "downloadMultipleButton": "Download selected pictures",
-            "downloadAllButton": "Download basket",
-            "removeSelectedElement": "Remove the selected picture",
-            "removeSelectedElements": "Remove selected pictures",
-            "removeEverythingFromBasket": "Empty basket",
-            "filterTitle": "Search filters",
-            "filterYears": "Years",
-            "defaultStartDateOption": "Start year",
-            "defaultEndDateOption": "End year",
-            "helpButton": "?",
-            "noResultsFound": "No results were found"
-        }
+{
+  "locale": "en-US",
+  "messages": {
+    "extension": {
+      "message": "Message!"
+    },
+    "photosObliques": {
+      "title": "Oblique Aerial Photos",
+      "search": "Search",
+      "cart": "Basket",
+      "yearTaken": "Year of acquisition",
+      "date": "Date",
+      "provider": "Provider",
+      "owner": "Owner",
+      "weight": "Size",
+      "relevance": "Relevance",
+      "orderBy": "Sort by",
+      "addBasket": "Add to basket",
+      "cancelSearch": "Cancel",
+      "validateSearch": "Search",
+      "picturesFound": "Pictures found",
+      "picturesLoaded": "Pictures loaded",
+      "updateSearch": "Change search",
+      "pictureSelected": "Pictures selected",
+      "windRoseLabel": "Shooting angle",
+      "picturesAvailable": "Pictures available",
+      "deletionModal": "Are you sure you want to delete all the pictures in the basket?",
+      "downloadModal": "Download pictures",
+      "numberOfFilesDownloaded": "pictures(s) to download",
+      "zoomTooltip": "Picture exceeds screen size",
+      "spinnerDownloadMsg": "Download in progress",
+      "spinnerResultLoadingMessage": "Loading results in progress",
+      "downloadIUnderstand": "Any use of downloaded photos must display the legal notices contained in the text file attached to each photo.",
+      "understood": "I understand",
+      "ok": "OK",
+      "cancel": "Cancel",
+      "prefixLabel": "Prefix for photo files",
+      "prefixPlaceHolder": "no prefix",
+      "fileName": "Name of .zip file",
+      "fileNamePlaceHolder": "today's timestamp",
+      "pictureAmount": "pictures",
+      "maxLimits": "Maximum limits: ",
+      "dropPopUpCustom": {
+        "title": "Error",
+        "message": "Operating error, please contact an administrator"
+      },
+      "dropPopUp200": {
+        "title": "Download complete",
+        "message": "The download was completed successfully."
+      },
+      "dropPopUp400": {
+        "title": "Error 400"
+      },
+      "dropPopUp500": {
+        "title": "Error 500"
+      },
+      "dropPopUpTooManyPictures": {
+        "title": "Too many pictures in the basket",
+        "message": "The number of photos in the basket exceeds the allowed limit"
+      },
+      "dropPopUpTooHeavy": {
+        "title": "Basket too big",
+        "message": "The weight of the photos in the basket exceeds the allowed limit"
+      },
+      "dropPopUpAddBasket": {
+        "title": "Add to basket",
+        "message": "You have successfully added the photo to the basket"
+      },
+      "alreadyInBasket": {
+        "title": "Already in basket",
+        "message": "This photo was already in the basket"
+      },
+      "downloadOneButton": "Download the selected picture",
+      "downloadMultipleButton": "Download selected pictures",
+      "downloadAllButton": "Download basket",
+      "removeSelectedElement": "Remove the selected picture",
+      "removeSelectedElements": "Remove selected pictures",
+      "removeEverythingFromBasket": "Empty basket",
+      "filterTitle": "Search filters",
+      "filterYears": "Years",
+      "defaultStartDateOption": "Start year",
+      "defaultEndDateOption": "End year",
+      "helpButton": "?",
+      "noResultsFound": "No results were found"
     }
+  }
 }

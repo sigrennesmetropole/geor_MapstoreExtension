@@ -1,12 +1,12 @@
-    {
-    "locale": "it-IT",
-    "messages": {
-        "extension": {
-            "message": "Messaggio!"
-        },
-        "photosObliques": {
-            "title": "PhotosObliques",
-            "sample": "<Message msgId={'sampleExtension.'}/>"
-        }
+{
+  "locale": "it-IT",
+  "messages": {
+    "extension": {
+      "message": "Messaggio!"
+    },
+    "photosObliques": {
+      "title": "PhotosObliques",
+      "sample": "<Message msgId={'sampleExtension.'}/>"
     }
+  }
 }

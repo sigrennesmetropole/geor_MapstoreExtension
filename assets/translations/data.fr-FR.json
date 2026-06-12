@@ -1,87 +1,87 @@
-    {
-    "locale": "fr-FR",
-    "messages": {
-        "extension": {
-            "message": "Message !"
-        },
-        "photosObliques": {
-            "title": "Photos Obliques",
-            "search": "Rechercher",
-            "cart": "Panier",
-            "yearTaken": "Année prise de vue",
-            "date": "Date",
-            "provider": "Prestataire",
-            "owner": "Propriétaire",
-            "weight": "Taille",
-            "relevance": "Pertinence",
-            "orderBy" : "Trier par",
-            "addBasket": "Ajouter au panier",
-            "cancelSearch": "Annuler",
-            "validateSearch": "Chercher",
-            "picturesFound": "Photos trouvées",
-            "picturesLoaded": "Photos listées",
-            "updateSearch": "Modifier la recherche",
-            "pictureSelected": "Photos sélectionnées",
-            "windRoseLabel": "Angle de prise de vue",
-            "picturesAvailable": "Photos disponibles",
-            "deletionModal": "Etes vous certain de vouloir supprimer tous les éléments du panier ?",
-            "downloadModal": "Téléchargement des photos",
-            "numberOfFilesDownloaded": "photo(s) à télécharger",
-            "zoomTooltip": "L'emprise dépasse de l'écran",
-            "spinnerDownloadMsg": "Téléchargement en cours",
-            "spinnerResultLoadingMessage": "Chargement des résultats en cours",
-            "downloadIUnderstand": "Pour tout usage des photos téléchargées, vous devez impérativement faire apparaitre les mentions légales présentes dans le fichier texte joint à chaque photo.",
-            "understood": "J'ai compris",
-            "ok": "OK",
-            "cancel": "Annuler",
-            "prefixLabel": "Préfixe des fichiers photos",
-            "prefixPlaceHolder":"pas de préfixe",
-            "fileName": "Nom du fichier .zip",
-            "fileNamePlaceHolder":"date du jour",
-            "pictureAmount": "images",
-            "maxLimits": "Limites maximales : ",
-            "dropPopUpCustom": {
-                "title": "Erreur",
-                "message": "Erreur de fonctionnement, merci de contacter les administrateurs"
-            },
-            "dropPopUp200": {
-                "title": "Téléchargement effectué",
-                "message": "Le téléchargement s'est déroulé avec succès."
-            },
-            "dropPopUp400": {
-                "title": "Erreur 400"
-            },
-            "dropPopUp500": {
-                "title": "Erreur 500"
-            },
-            "dropPopUpTooManyPictures": {
-                "title": "Trop de photos dans le panier",
-                "message": "Le nombre de photos dans la panier a excédé la limite maximale autorisée"
-            },
-            "dropPopUpTooHeavy": {
-                "title": "Panier trop lourd",
-                "message": "Le poids des photos a excédé la limite maximale autorisée"
-            },
-            "dropPopUpAddBasket": {
-                "title": "Ajout panier",
-                "message": "Vous avez ajouté votre photo au panier avec succès"
-            },
-            "alreadyInBasket": {
-                "title": "Photo déjà ajoutée",
-                "message": "Cette photo était déjà présente dans le panier"
-            },
-            "downloadOneButton": "Télécharger l'élément sélectionné",
-            "downloadMultipleButton": "Télécharger les éléments",
-            "downloadAllButton": "Télécharger le panier",
-            "removeSelectedElement": "Supprimer l'élément sélectionné",
-            "removeSelectedElements": "Supprimer les éléments sélectionnés",
-            "removeEverythingFromBasket": "Vider le panier",
-            "filterTitle": "Filtres de recherche",
-            "filterYears": "Années",
-            "defaultStartDateOption": "Année de Début",
-            "defaultEndDateOption": "Année de fin",
-            "helpButton": "?",
-            "noResultsFound": "Aucun résultat n'a été trouvé"
-        }
+{
+  "locale": "fr-FR",
+  "messages": {
+    "extension": {
+      "message": "Message !"
+    },
+    "photosObliques": {
+      "title": "Photos Obliques",
+      "search": "Rechercher",
+      "cart": "Panier",
+      "yearTaken": "Année prise de vue",
+      "date": "Date",
+      "provider": "Prestataire",
+      "owner": "Propriétaire",
+      "weight": "Poids",
+      "relevance": "Pertinence",
+      "orderBy": "Trier par",
+      "addBasket": "Ajouter au panier",
+      "cancelSearch": "Annuler",
+      "validateSearch": "Chercher",
+      "picturesFound": "Photos trouvées",
+      "picturesLoaded": "Photos listées",
+      "updateSearch": "Modifier la recherche",
+      "pictureSelected": "Photos sélectionnées",
+      "windRoseLabel": "Angle de prise de vue",
+      "picturesAvailable": "Photos disponibles",
+      "deletionModal": "Etes vous certain de vouloir supprimer tous les éléments du panier ?",
+      "downloadModal": "Téléchargement des photos",
+      "numberOfFilesDownloaded": "photo(s) à télécharger",
+      "zoomTooltip": "L'emprise dépasse de l'écran",
+      "spinnerDownloadMsg": "Téléchargement en cours",
+      "spinnerResultLoadingMessage": "Chargement des résultats en cours",
+      "downloadIUnderstand": "Pour tout usage des photos téléchargées, vous devez impérativement faire apparaitre les mentions légales présentes dans le fichier texte joint à chaque photo.",
+      "understood": "J'ai compris",
+      "ok": "OK",
+      "cancel": "Annuler",
+      "prefixLabel": "Préfixe des fichiers photos",
+      "prefixPlaceHolder": "pas de préfixe",
+      "fileName": "Nom du fichier .zip",
+      "fileNamePlaceHolder": "date du jour",
+      "pictureAmount": "images",
+      "maxLimits": "Limites maximales : ",
+      "dropPopUpCustom": {
+        "title": "Erreur",
+        "message": "Erreur de fonctionnement, merci de contacter les administrateurs"
+      },
+      "dropPopUp200": {
+        "title": "Téléchargement effectué",
+        "message": "Le téléchargement s'est déroulé avec succès."
+      },
+      "dropPopUp400": {
+        "title": "Erreur 400"
+      },
+      "dropPopUp500": {
+        "title": "Erreur 500"
+      },
+      "dropPopUpTooManyPictures": {
+        "title": "Trop de photos dans le panier",
+        "message": "Le nombre de photos dans la panier a excédé la limite maximale autorisée"
+      },
+      "dropPopUpTooHeavy": {
+        "title": "Panier trop lourd",
+        "message": "Le poids des photos a excédé la limite maximale autorisée"
+      },
+      "dropPopUpAddBasket": {
+        "title": "Ajout panier",
+        "message": "Vous avez ajouté votre photo au panier avec succès"
+      },
+      "alreadyInBasket": {
+        "title": "Photo déjà ajoutée",
+        "message": "Cette photo était déjà présente dans le panier"
+      },
+      "downloadOneButton": "Télécharger l'élément sélectionné",
+      "downloadMultipleButton": "Télécharger les éléments",
+      "downloadAllButton": "Télécharger le panier",
+      "removeSelectedElement": "Supprimer l'élément sélectionné",
+      "removeSelectedElements": "Supprimer les éléments sélectionnés",
+      "removeEverythingFromBasket": "Vider le panier",
+      "filterTitle": "Filtres de recherche",
+      "filterYears": "Années",
+      "defaultStartDateOption": "Année de Début",
+      "defaultEndDateOption": "Année de fin",
+      "helpButton": "?",
+      "noResultsFound": "Aucun résultat n'a été trouvé"
     }
+  }
 }
