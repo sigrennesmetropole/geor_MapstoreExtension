@@ -5,27 +5,28 @@ const extractThemesPlugin = require('./MapStore2/build/themes.js').extractThemes
 const ModuleFederationPlugin = require('./MapStore2/build/moduleFederation').plugin;
 const proxyConfig = require('./proxyConfig');
 
-module.exports = require('./MapStore2/build/buildConfig')(
-    {
+module.exports = require('./MapStore2/build/buildConfig')({
+    bundles: {
         'MapStoreExtension': path.join(__dirname, "js", "app"),
         'MapStoreExtension-embedded': path.join(__dirname, "MapStore2", "web", "client", "product", "embedded"),
         'MapStoreExtension-api': path.join(__dirname, "MapStore2", "web", "client", "product", "api")
     },
     themeEntries,
-    {
+    paths: {
         base: __dirname,
         dist: path.join(__dirname, "dist"),
         framework: path.join(__dirname, "MapStore2", "web", "client"),
         code: [path.join(__dirname, "js"), path.join(__dirname, "MapStore2", "web", "client")]
     },
-    [extractThemesPlugin, ModuleFederationPlugin],
-    false,
-    "dist/",
-    '.MapStoreExtension',
-    [],
-    {
+    plugins: [extractThemesPlugin, ModuleFederationPlugin],
+    prod: false,
+    publicPath: "dist/",
+    cssPrefix: '.MapStoreExtension',
+    prodPlugins: [],
+    alias: {
         "@mapstore/patcher": path.resolve(__dirname, "node_modules", "@mapstore", "patcher"),
         "@mapstore": path.resolve(__dirname, "MapStore2", "web", "client"),
         "@js": path.resolve(__dirname, "js")
-    }, proxyConfig
-);
+    },
+    proxy: proxyConfig
+});
