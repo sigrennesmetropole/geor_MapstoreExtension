@@ -1,32 +1,31 @@
-const path = require("path");
-
-const themeEntries = require('./MapStore2/build/themes.js').themeEntries;
-const extractThemesPlugin = require('./MapStore2/build/themes.js').extractThemesPlugin;
-const ModuleFederationPlugin = require('./MapStore2/build/moduleFederation').plugin;
 const proxyConfig = require('./proxyConfig');
-
-module.exports = require('./MapStore2/build/buildConfig')({
-    bundles: {
-        'MapStoreExtension': path.join(__dirname, "js", "app"),
-        'MapStoreExtension-embedded': path.join(__dirname, "MapStore2", "web", "client", "product", "embedded"),
-        'MapStoreExtension-api': path.join(__dirname, "MapStore2", "web", "client", "product", "api")
-    },
+const {
+    paths,
+    bundles,
     themeEntries,
-    paths: {
-        base: __dirname,
-        dist: path.join(__dirname, "dist"),
-        framework: path.join(__dirname, "MapStore2", "web", "client"),
-        code: [path.join(__dirname, "js"), path.join(__dirname, "MapStore2", "web", "client")]
-    },
-    plugins: [extractThemesPlugin, ModuleFederationPlugin],
+    commonPlugins,
+    alias,
+    getOptimizationConfig,
+    deepMergeConfig
+} = require('./webpack.base');
+
+const baseConfig = require('./MapStore2/build/buildConfig')({
+    bundles,
+    themeEntries,
+    paths,
+    plugins: commonPlugins,
     prod: false,
     publicPath: "dist/",
     cssPrefix: '.MapStoreExtension',
     prodPlugins: [],
-    alias: {
-        "@mapstore/patcher": path.resolve(__dirname, "node_modules", "@mapstore", "patcher"),
-        "@mapstore": path.resolve(__dirname, "MapStore2", "web", "client"),
-        "@js": path.resolve(__dirname, "js")
-    },
+    alias,
     proxy: proxyConfig
+});
+
+const optimizationConfig = getOptimizationConfig(false);
+
+// Merge optimizations with buildConfig output
+module.exports = deepMergeConfig(baseConfig, {
+    cache: optimizationConfig.cache,
+    optimization: optimizationConfig.optimization
 });

@@ -5,10 +5,10 @@
 
 module.exports = {
     '/rest': {
-        target: "https://portail-test.sig.rennesmetropole.fr/mapstore",
+        target: "https://portail-preprod.sig.rennesmetropole.fr/mapstore",
         secure: false,
         headers: {
-            host: "portail-test.sig.rennesmetropole.fr"
+            host: "portail-preprod.sig.rennesmetropole.fr"
         },
         changeOrigin: true
     },
@@ -34,18 +34,18 @@ module.exports = {
         }
     },
     '/geoserver': {
-        target: "https://portail-test.sig.rennesmetropole.fr",
+        target: "https://portail-preprod.sig.rennesmetropole.fr",
         secure: false,
         headers: {
-            host: "portail-test.sig.rennesmetropole.fr"
+            host: "portail-preprod.sig.rennesmetropole.fr"
         },
         changeOrigin: true
     },
     '/console': {
-        target: "https://portail-test.sig.rennesmetropole.fr",
+        target: "https://portail-preprod.sig.rennesmetropole.fr",
         secure: false,
         headers: {
-            host: "portail-test.sig.rennesmetropole.fr"
+            host: "portail-preprod.sig.rennesmetropole.fr"
         },
         changeOrigin: true
     },
@@ -54,10 +54,10 @@ module.exports = {
         pathRewrite: {'/docs': '/mapstore/docs'}
     },
     '/photosobliques': {
-        target: "https://portail-test.sig.rennesmetropole.fr",
+        target: "https://portail-preprod.sig.rennesmetropole.fr",
         secure: false,
         headers: {
-            host: "portail-test.sig.rennesmetropole.fr"
+            host: "portail-preprod.sig.rennesmetropole.fr"
         },
         changeOrigin: true
     }
