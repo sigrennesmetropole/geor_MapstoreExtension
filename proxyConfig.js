@@ -4,53 +4,53 @@
 // const DEV_HOST = "localhost:8080";
 
 module.exports = {
-    '/rest': {
-        target: "https://portail-test.sig.rennesmetropole.fr/mapstore",
+    "/rest": {
+        target: "https://portail-preprod.sig.rennesmetropole.fr/mapstore",
         secure: false,
         headers: {
-            host: "portail-test.sig.rennesmetropole.fr"
+            host: "portail-preprod.sig.rennesmetropole.fr",
         },
-        changeOrigin: true
+        changeOrigin: true,
     },
-    '/pdf': {
+    "/pdf": {
         target: "https://dev-mapstore2.geosolutionsgroup.com/mapstore",
         secure: false,
         headers: {
-            host: "dev-mapstore2.geosolutionsgroup.com"
-        }
+            host: "dev-mapstore2.geosolutionsgroup.com",
+        },
     },
-    '/mapstore/pdf': {
+    "/mapstore/pdf": {
         target: "https://dev-mapstore2.geosolutionsgroup.com",
         secure: false,
         headers: {
-            host: "dev-mapstore2.geosolutionsgroup.com"
-        }
+            host: "dev-mapstore2.geosolutionsgroup.com",
+        },
     },
-    '/proxy': {
+    "/proxy": {
         target: "http://localhost:8082/",
         secure: false,
         headers: {
-            host: "dev-mapstore2.geosolutionsgroup.com"
-        }
+            host: "dev-mapstore2.geosolutionsgroup.com",
+        },
     },
-    '/geoserver': {
-        target: "https://portail-test.sig.rennesmetropole.fr",
+    "/geoserver": {
+        target: "https://portail-preprod.sig.rennesmetropole.fr",
         secure: false,
         headers: {
-            host: "portail-test.sig.rennesmetropole.fr"
+            host: "portail-preprod.sig.rennesmetropole.fr",
         },
-        changeOrigin: true
+        changeOrigin: true,
     },
-    '/console': {
-        target: "https://portail-test.sig.rennesmetropole.fr",
+    "/console": {
+        target: "https://portail-preprod.sig.rennesmetropole.fr",
         secure: false,
         headers: {
-            host: "portail-test.sig.rennesmetropole.fr"
+            host: "portail-preprod.sig.rennesmetropole.fr",
         },
-        changeOrigin: true
+        changeOrigin: true,
     },
-    '/docs': {
+    "/docs": {
         target: "http://localhost:8081",
-        pathRewrite: {'/docs': '/mapstore/docs'}
-    }
+        pathRewrite: { "/docs": "/mapstore/docs" },
+    },
 };
