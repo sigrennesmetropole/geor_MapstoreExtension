@@ -1,55 +1,69 @@
-    {
-    "locale": "fr-FR",
-    "messages": {
-        "extension": {
-            "message": "Message !"
-        },
-        "RTGE": {
-            "title": "RTGE",
-            "prenom": "Prénom",
-            "nom": "Nom",
-            "collectivite": "Collectivité",
-            "service": "Service",
-            "courriel": "Courriel",
-            "telephone": "Téléphone",
-            "motivation": "Motivation - Projet",
-            "dataType": "Type de données",
-            "dataSurf": "Données surface",
-            "dataUnderSurf": "Données sous-sol",
-            "dataUnderSurfWarning" : "Assurez-vous de renseigner précisément votre besoin dans la zone 'Motivations - Projet'",
-            "schematicalNetwork": "Inclure Réseau Schématique",
-            "schematicalNetworkWarning": "Données dont le tracé est indicatif",
-            "sendBtnDisabled" : "Veuillez effectuer une sélection afin de pouvoir envoyer votre demande",
-            "alertMaxFeatures": {
-                "title": "Avertissement",
-                "message": "Le nombre de dalles sélectionnées est supérieur au maximum autorisé"
-            },
-            "sendMailSuccess": {
-                "title": "Succès",
-                "message": "Votre demande d'extraction a été envoyée"
-            },
-            "sendMailFailure": {
-                "title": "Echec",
-                "message": "Erreur lors de l'envoi du mail, votre demande n'a pas pu être envoyée"
-            },
-            "welcome": "Accueil",
-            "selection": "Selection",
-            "selectionTab": {
-                "tiles": "tuiles"
-            },
-            "send": "Envoi",
-            "sendTab": {
-                "button": "Envoyer mail"
-            },
-            "tooltips": {
-                "tooltipSelectPoint" : "Sélectionner par simple clic",
-                "tooltipSeclectLine" : "Sélectionner par une polyligne",
-                "tooltipSelectPolygon" : "Sélectionner par un polygone",
-                "tooltipTrashSquare" : "Retirer dalle(s) sélectionnée(s)" ,
-                "tooltipTrash" : "Retirer toutes les dalles" 
-            },
-            "spinnerMsg": "Envoi du mail...",
-            "sample": "<Message msgId={'RTGE.'}/>"
-        }
+{
+  "locale": "fr-FR",
+  "messages": {
+    "extension": {
+      "message": "Message !"
+    },
+    "commandeTaData": {
+      "title": "Commande ta data",
+      "accueil": {
+        "title": "Outil de demande d'extraction de données",
+        "principe": "Principe d'utilisation",
+        "principe_1": "Ce formulaire vois permet d'effectuer des demandes d'extraction de données sur une emprise spatiale.",
+        "principe_2": "Les demandes d'extraction relatives aux données du Référentiel Métropolitain Topographique et Réseaux doivent se faire uniquement par le biais de l'outil RTGE.",
+        "principe_3": "La limite du nombre de dalles maximum par demande est de 50.",
+        "manual": "Mode d'emploi",
+        "manual_1": "Utiliser 1 des 3 outils de sélection pour sélectionner les dalles dont vous avez besoin. Affiner votre sélection si nécessaire (ajouter / supprimer).",
+        "manual_2": "Cliquer sur le bouton 'Envoi'.",
+        "manual_3": "Remplir les champs et motiver votre demande en précisant les données souhaitées.",
+        "manual_4": "Valider la demande.",
+        "info": "La demande sera soumise et traitée par l'équipe du Service Données Territoriales et Information Géographique de Rennes Métropole.",
+        "next": "Suivant"
+      },
+      "prenom": "Prénom",
+      "nom": "Nom",
+      "collectivite": "Collectivité",
+      "service": "Service",
+      "courriel": "Courriel",
+      "telephone": "Téléphone",
+      "motivation": "Motivation - Projet",
+      "dataType": "Type de données",
+      "dataSurf": "Données surface",
+      "dataUnderSurf": "Données sous-sol",
+      "dataUnderSurfWarning": "Assurez-vous de renseigner précisément votre besoin dans la zone 'Motivations - Projet'",
+      "schematicalNetwork": "Inclure Réseau Schématique",
+      "schematicalNetworkWarning": "Données dont le tracé est indicatif",
+      "sendBtnDisabled": "Veuillez effectuer une sélection afin de pouvoir envoyer votre demande",
+      "alertMaxFeatures": {
+        "title": "Avertissement",
+        "message": "Le nombre de dalles sélectionnées est supérieur au maximum autorisé"
+      },
+      "sendMailSuccess": {
+        "title": "Succès",
+        "message": "Votre demande d'extraction a été envoyée"
+      },
+      "sendMailFailure": {
+        "title": "Echec",
+        "message": "Erreur lors de l'envoi du mail, votre demande n'a pas pu être envoyée"
+      },
+      "welcome": "Accueil",
+      "selection": "Selection",
+      "selectionTab": {
+        "tiles": "tuiles"
+      },
+      "send": "Envoi",
+      "sendTab": {
+        "button": "Envoyer mail"
+      },
+      "tooltips": {
+        "tooltipSelectPoint": "Sélectionner par simple clic",
+        "tooltipSeclectLine": "Sélectionner par une polyligne",
+        "tooltipSelectPolygon": "Sélectionner par un polygone",
+        "tooltipTrashSquare": "Retirer dalle(s) sélectionnée(s)",
+        "tooltipTrash": "Retirer toutes les dalles"
+      },
+      "spinnerMsg": "Envoi du mail...",
+      "sample": "<Message msgId={'RTGE.'}/>"
     }
+  }
 }
